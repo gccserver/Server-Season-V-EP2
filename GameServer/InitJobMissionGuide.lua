@@ -1,0 +1,105 @@
+--[[
+
+주의사항: 아래 스크립트에 입력된 미션ID들이 실제 미션ID인지 서버에서 확인하지 않는다
+--]]
+
+-- GCEnum.h의 EGCCharType과 일치 시키도록 한다
+TRUE    = 1
+FALSE   = 0
+
+ELESIS  = 0
+LIRE    = 1
+ARME    = 2
+LAS     = 3
+RYAN    = 4
+RONAN   = 5
+AMY     = 6
+JIN     = 7
+SIEG    = 8
+MARI    = 9
+DIO     = 10
+ZERO    = 11
+LEY	    = 12
+LUPUS   = 13
+Rin		= 14
+Asin	= 15
+Lime	= 16
+Edel	= 17
+
+-- 미션 전직 가이드 시스템의 사용 설정(TRUE: 사용한다, FALSE: 사용하지 않는다)
+USE_JOB_MISSION_GUIDE = FALSE
+
+MissionGuide =
+{
+--  { CharID, Level, GP Mission ID, Use GP Mission, Cash Mission ID, Use Cash Mission },
+
+-- 여기부터 적용 내용. 보기 쉽게 직업별로 모아 세팅한다
+--[[
+    { ELESIS, 20, 509040, TRUE, 509050, TRUE },
+    { ELESIS, 40, 737270, TRUE, 737280, TRUE },
+    { ELESIS, 60, 737870, TRUE, 737880, TRUE },
+
+    { LIRE, 20, 509100, TRUE, 509110, TRUE },
+    { LIRE, 40, 737330, TRUE, 737340, TRUE },
+    { LIRE, 60, 737930, TRUE, 737940, TRUE },
+
+    { ARME, 20, 509160, TRUE, 509170, TRUE },
+    { ARME, 40, 737390, TRUE, 737400, TRUE },
+    { ARME, 60, 737990, TRUE, 738000, TRUE },
+
+    { LAS, 20, 509220, TRUE, 509230, TRUE },
+    { LAS, 40, 737450, TRUE, 737460, TRUE },
+    { LAS, 60, 738050, TRUE, 738060, TRUE },
+
+    { RYAN, 20, 509280, TRUE, 509290, TRUE },
+    { RYAN, 40, 737510, TRUE, 737520, TRUE },
+    { RYAN, 60, 738110, TRUE, 738120, TRUE },
+
+    { RONAN, 20, 509340, TRUE, 509350, TRUE },
+    { RONAN, 40, 737570, TRUE, 737580, TRUE },
+    { RONAN, 60, 738170, TRUE, 738180, TRUE },
+
+    { AMY, 20, 509400, TRUE, 509410, TRUE },
+    { AMY, 40, 737630, TRUE, 737640, TRUE },
+    { AMY, 60, 738230, TRUE, 738240, TRUE },
+
+    { JIN, 20, 509460, TRUE, 509470, TRUE },
+    { JIN, 40, 737690, TRUE, 737700, TRUE },
+    { JIN, 60, 738290, TRUE, 738300, TRUE },
+
+    { SIEG, 20, 509520, TRUE, 509530, TRUE },
+    { SIEG, 40, 737750, TRUE, 737760, TRUE },
+    { SIEG, 60, 738350, TRUE, 738360, TRUE },
+
+    { MARI, 20, 509580, TRUE, 509590, TRUE },
+    { MARI, 40, 737810, TRUE, 737820, TRUE },
+    { MARI, 60, 738410, TRUE, 738420, TRUE },
+
+    { DIO, 35, 509640, TRUE, 509650, TRUE },
+    { DIO, 45, 823770, TRUE, 823760, TRUE },
+    { DIO, 60, 823980, TRUE, 823970, TRUE },
+
+    { ZERO, 20, 548230, TRUE, 548240, TRUE },
+    { ZERO, 40, 1061920, TRUE, 1061930, TRUE },
+    { ZERO, 60, 1062080, TRUE, 1062090, TRUE },
+
+    { LEY, 20, 559160, TRUE, 559170, TRUE },
+    { LEY, 40, 1069310, TRUE, 1069320, TRUE },
+    { LEY, 60, 1094530, TRUE, 1094520, TRUE },
+
+    { LUPUS, 20, 777170, TRUE, 777180, TRUE },
+    { LUPUS, 40, 777220, TRUE, 777230, TRUE },
+    { LUPUS, 60, 777280, TRUE, 777290, TRUE },
+
+	{ Rin, 20, 1033320, TRUE, 1033330, TRUE },
+    { Rin, 40, 1035290, TRUE, 1035300, TRUE },
+    { Rin, 60, 1041590, TRUE, 1041600, TRUE },
+	
+	--{ Asin, 20, 1127570, TRUE, 1127560, TRUE },
+	
+	{ Lime, 20, 1121480, TRUE, 1121470, TRUE },
+	
+	{ Edel, 20, 1247770, TRUE, 1247760, TRUE },
+--]]
+}
+

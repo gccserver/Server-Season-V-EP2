@@ -1,0 +1,1930 @@
+--[[
+	Script Description
+	{
+        -- 과제 기본정보
+		ID = SUBJECT_SAMPLE,                    -- Enum.stg에 선언된 Subject타입 ID
+        ACTION_SCRIPT = "SJAction_Sample.lua",  -- 액션 스크립트 파일이름( 과제에 대한 종류를 정의하고, 성공유무를 처리한다. )
+        ID_SIMPLE_DESC = 1234,                         -- 과제 설명 StringID( 우측상단 UI에 출력될 과제 설명String )
+        
+        -- 과제 보상정보
+        Exp = 10,                               -- 보상 : 경험치( 서버에서 참조 )
+        GP = 10,                                -- 보상 : 게임포인트( 서버에서 참조 )
+        Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_CHOUCRING_SHIELD, 10, 1, FALSE },
+        },
+        Drop =                                  -- 보상 : 드랍아이템( 서버에서 참조 )
+        {
+            -- { itemid, grade, period, count, },
+            { 8880, -1, -1, 3, },
+            { 379820, 1, -1, -1, },
+        },
+	}
+]]--
+
+
+SubjectList = 
+{
+    -- 1 : 달성과제 : 샘플액션
+	{
+		ID = SUBJECT_SAMPLE,
+        ACTION_SCRIPT = "SJAction_Sample.lua",
+        ID_SIMPLE_DESC = 0,
+        
+        Exp = 10,
+        GP = 10,
+        Buff =
+        { 
+            { EGC_EFFECT_AMY1_DANCING_BUFF, 50, 1, FALSE, },
+        },
+        Drop =
+        {
+            { 8880, -1, -1, 3, },
+            { 379820, 1, -1, -1, },
+            { 379820, 1, -1, -1, },
+        },
+	},
+    
+    -- 2 : 저주받은 정원 : 콤보 10회
+	{
+		ID = SUBJECT_CURSEDGARDEN_COMBO_10,
+        ACTION_SCRIPT = "SJAction_CursedGarden_Combo10.lua",
+        ID_SIMPLE_DESC = 1,
+        Drop = {    { 58730, -1, -1, 1, },   },
+        Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_HP_UP, 5, 1, FALSE },
+        },
+	},
+    
+    -- 3 : 저주받은 정원 : 데미지 50
+	{
+		ID = SUBJECT_CURSEDGARDEN_DAMAGE_50,
+        ACTION_SCRIPT = "SJAction_CursedGarden_Damage50.lua",
+        ID_SIMPLE_DESC = 2,
+        Drop = {    { 58730, -1, -1, 1, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_ATTACK_UP, 15, 1, FALSE },
+        },
+	},
+    
+    -- 4 : 저주받은 정원 : 데미지 100
+	{
+		ID = SUBJECT_CURSEDGARDEN_DAMAGE_100,
+        ACTION_SCRIPT = "SJAction_CursedGarden_Damage100.lua",
+        ID_SIMPLE_DESC = 3,
+        Drop = {    { 58730, -1, -1, 1, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_DEFFNSE_UP, 20, 1, FALSE },
+        },
+	},
+    
+    -- 5 : 저주받은 정원 : 피격횟수 0
+	{
+		ID = SUBJECT_CURSEDGARDEN_ATTACKED_0,
+        ACTION_SCRIPT = "SJAction_CursedGarden_Attacked0.lua",
+        ID_SIMPLE_DESC = 4,
+        Drop = {    { 58730, -1, -1, 1, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_CRITICAL_UP, 10, 1, FALSE },
+        },
+	},
+    
+    -- 6 : 저주받은 정원 : 피격횟수 3
+	{
+		ID = SUBJECT_CURSEDGARDEN_ATTACKED_3,
+        ACTION_SCRIPT = "SJAction_CursedGarden_Attacked3.lua",
+        ID_SIMPLE_DESC = 5,
+        Drop = {    { 58730, -1, -1, 1, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_HP_UP, 5, 1, FALSE },
+        },
+	},
+    
+    -- 7 : 저주받은 정원 : 스킬사용 3
+	{
+		ID = SUBJECT_CURSEDGARDEN_SKILLUSE_3,
+        ACTION_SCRIPT = "SJAction_CursedGarden_SkillUse3.lua",
+        ID_SIMPLE_DESC = 6,
+        Drop = {    { 58730, -1, -1, 1, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_ATTACK_UP, 15, 1, FALSE },
+        },
+	},
+    
+    -- 8 : 저주받은 정원 : 스킬사용 5
+	{
+		ID = SUBJECT_CURSEDGARDEN_SKILLUSE_5,
+        ACTION_SCRIPT = "SJAction_CursedGarden_SkillUse5.lua",
+        ID_SIMPLE_DESC = 7,
+        Drop = {    { 58730, -1, -1, 1, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_DEFFNSE_UP, 20, 1, FALSE },
+        },
+	},
+    
+    -- 9 : 에델전용 : 1단 필살기 : 스위프트 히트
+	{
+		ID = SUBJECT_EDEL_LV1,
+        ACTION_SCRIPT = "SJAction_Edel_Lv1.lua",
+        ID_SIMPLE_DESC = 8,
+        Drop = {    { 58730, -1, -1, 1, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_CRITICAL_UP, 10, 1, FALSE },
+        },
+	},
+    
+    -- 10 : 에델전용 : 커맨드 스킬 : 리트레뜨
+	{
+		ID = SUBJECT_EDEL_LV2,
+        ACTION_SCRIPT = "SJAction_Edel_Lv2.lua",
+        ID_SIMPLE_DESC = 81,
+        Drop = {    { 58730, -1, -1, 1, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_HP_UP, 5, 1, FALSE },
+        },
+	},
+ 
+    -- 11 : 오염된 지하실 : 콤보 15회
+	{
+		ID = SUBJECT_SOILEDBASEMENT_COMBO_15,
+        ACTION_SCRIPT = "SJAction_SoiledBasement_Combo15.lua",
+        ID_SIMPLE_DESC = 10,
+        Drop = {    { 58730, -1, -1, 2, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_ATTACK_UP, 15, 1, FALSE },
+        },
+	}, 
+    
+    -- 12 : 오염된 지하실 : 데미지 70
+	{
+		ID = SUBJECT_SOILEDBASEMENT_DAMAGE_70,
+        ACTION_SCRIPT = "SJAction_SoiledBasement_Damage70.lua",
+        ID_SIMPLE_DESC = 11,
+        Drop = {    { 58730, -1, -1, 2, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_DEFFNSE_UP, 20, 1, FALSE },
+        },
+	}, 
+    
+    -- 13 : 오염된 지하실 : 데미지 120
+	{
+		ID = SUBJECT_SOILEDBASEMENT_DAMAGE_120,
+        ACTION_SCRIPT = "SJAction_SoiledBasement_Damage120.lua",
+        ID_SIMPLE_DESC = 12,
+        Drop = {    { 58730, -1, -1, 2, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_CRITICAL_UP, 10, 1, FALSE },
+        },
+	}, 
+    
+    -- 14 : 오염된 지하실 : 피격횟수 0
+	{
+		ID = SUBJECT_SOILEDBASEMENT_ATTACKED_0,
+        ACTION_SCRIPT = "SJAction_SoiledBasement_Attacked0.lua",
+        ID_SIMPLE_DESC = 13,
+        Drop = {    { 58730, -1, -1, 2, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_HP_UP, 5, 1, FALSE },
+        },
+	},
+    
+    -- 15 : 오염된 지하실 : 피격횟수 3
+	{
+		ID = SUBJECT_SOILEDBASEMENT_ATTACKED_3,
+        ACTION_SCRIPT = "SJAction_SoiledBasement_Attacked3.lua",
+        ID_SIMPLE_DESC = 14,
+        Drop = {    { 58730, -1, -1, 2, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_ATTACK_UP, 15, 1, FALSE },
+        },
+	},
+    
+    -- 16 : 오염된 지하실 : 스킬사용 3
+	{
+		ID = SUBJECT_SOILEDBASEMENT_SKILLUSE_3,
+        ACTION_SCRIPT = "SJAction_SoiledBasement_SkillUse3.lua",
+        ID_SIMPLE_DESC = 15,
+        Drop = {    { 58730, -1, -1, 2, },   },Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_DEFFNSE_UP, 20, 1, FALSE },
+        },
+	},
+    
+    -- 17 : 오염된 지하실 : 스킬사용 5
+	{
+		ID = SUBJECT_SOILEDBASEMENT_SKILLUSE_5,
+        ACTION_SCRIPT = "SJAction_SoiledBasement_SkillUse5.lua",
+        ID_SIMPLE_DESC = 16,
+        Drop = {    { 58730, -1, -1, 2, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_CRITICAL_UP, 10, 1, FALSE },
+        },
+	},
+    
+    -- 18 : 에델전용 : 2단 필살기 : 어썰트 피어스
+	{
+		ID = SUBJECT_EDEL_LV4,
+        ACTION_SCRIPT = "SJAction_Edel_Lv4.lua",
+        ID_SIMPLE_DESC = 17,
+        Drop = {    { 58730, -1, -1, 2, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_HP_UP, 5, 1, FALSE },
+        },
+	},
+    
+    -- 19 : 에델전용 : 커맨드 스킬 : 2단점프+부스트
+	{
+		ID = SUBJECT_EDEL_LV6,
+        ACTION_SCRIPT = "SJAction_Edel_Lv6.lua",
+        ID_SIMPLE_DESC = 82,
+        Drop = {    { 58730, -1, -1, 2, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_ATTACK_UP, 15, 1, FALSE },
+        },
+	},
+    
+    -- 20 : 망령이 깃든 복도 : 콤보 20회
+	{
+		ID = SUBJECT_SPECTERHALLWAYS_COMBO_20,
+        ACTION_SCRIPT = "SJAction_SpecterHallways_Combo20.lua",
+        ID_SIMPLE_DESC = 19,
+        Drop = {    { 58730, -1, -1, 3, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_DEFFNSE_UP, 20, 1, FALSE },
+        },
+	},
+    
+    -- 21 : 망령이 깃든 복도 : 데미지 90
+	{
+		ID = SUBJECT_SPECTERHALLWAYS_DAMAGE_90,
+        ACTION_SCRIPT = "SJAction_SpecterHallways_Damage90.lua",
+        ID_SIMPLE_DESC = 20,
+        Drop = {    { 58730, -1, -1, 3, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_CRITICAL_UP, 10, 1, FALSE },
+        },
+	},
+    
+    -- 22 : 망령이 깃든 복도 : 데미지 140
+	{
+		ID = SUBJECT_SPECTERHALLWAYS_DAMAGE_140,
+        ACTION_SCRIPT = "SJAction_SpecterHallways_Damage140.lua",
+        ID_SIMPLE_DESC = 21,
+        Drop = {    { 58730, -1, -1, 3, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_HP_UP, 5, 1, FALSE },
+        },
+	},
+    
+    -- 23 : 망령이 깃든 복도 : 피격횟수 0
+	{
+		ID = SUBJECT_SPECTERHALLWAYS_ATTACKED_0,
+        ACTION_SCRIPT = "SJAction_SpecterHallways_Attacked0.lua",
+        ID_SIMPLE_DESC = 22,
+        Drop = {    { 58730, -1, -1, 3, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_ATTACK_UP, 15, 1, FALSE },
+        },
+	},
+    
+    -- 24 : 망령이 깃든 복도 : 피격횟수 3
+	{
+		ID = SUBJECT_SPECTERHALLWAYS_ATTACKED_3,
+        ACTION_SCRIPT = "SJAction_SpecterHallways_Attacked3.lua",
+        ID_SIMPLE_DESC = 23,
+        Drop = {    { 58730, -1, -1, 3, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_DEFFNSE_UP, 20, 1, FALSE },
+        },
+	},
+    
+    -- 25 : 망령이 깃든 복도 : 백어택 10
+	{
+		ID = SUBJECT_SPECTERHALLWAYS_BACKATTACK_10,
+        ACTION_SCRIPT = "SJAction_SpecterHallways_BackAttack10.lua",
+        ID_SIMPLE_DESC = 24,
+        Drop = {    { 58730, -1, -1, 3, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_CRITICAL_UP, 10, 1, FALSE },
+        },
+	},
+    
+    -- 26 : 망령이 깃든 복도 : 백어택 15
+	{
+		ID = SUBJECT_SPECTERHALLWAYS_BACKATTACK_15,
+        ACTION_SCRIPT = "SJAction_SpecterHallways_BackAttack15.lua",
+        ID_SIMPLE_DESC = 25,
+        Drop = {    { 58730, -1, -1, 3, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_HP_UP, 5, 1, FALSE },
+        },
+	},
+    
+    -- 27 : 망령이 깃든 복도 : 스킬사용 2
+	{
+		ID = SUBJECT_SPECTERHALLWAYS_SKILLUSE_2,
+        ACTION_SCRIPT = "SJAction_SpecterHallways_SkillUse2.lua",
+        ID_SIMPLE_DESC = 26,
+        Drop = {    { 58730, -1, -1, 3, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_ATTACK_UP, 15, 1, FALSE },
+        },
+	},
+    
+    -- 28 : 망령이 깃든 복도 : 스킬사용 4
+	{
+		ID = SUBJECT_SPECTERHALLWAYS_SKILLUSE_4,
+        ACTION_SCRIPT = "SJAction_SpecterHallways_SkillUse4.lua",
+        ID_SIMPLE_DESC = 27,
+        Drop = {    { 58730, -1, -1, 3, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_DEFFNSE_UP, 20, 1, FALSE },
+        },
+	},
+    
+    -- 29 : 에델전용 : 3단 필살기 : 루나틱 블레이드
+	{
+		ID = SUBJECT_EDEL_LV8,
+        ACTION_SCRIPT = "SJAction_Edel_Lv8.lua",
+        ID_SIMPLE_DESC = 28,
+        Drop = {    { 58730, -1, -1, 3, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_CRITICAL_UP, 10, 1, FALSE },
+        },
+	},
+    
+    -- 30 : 배신자의 화실 : 콤보 25회
+	{
+		ID = SUBJECT_BETREAYERSATELIER_COMBO_25,
+        ACTION_SCRIPT = "SJAction_BetreayersAtelier_Combo25.lua",
+        ID_SIMPLE_DESC = 29,
+        Drop = {    { 58730, -1, -1, 4, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_HP_UP, 5, 1, FALSE },
+        },
+	},
+    
+    -- 31 : 배신자의 화실 : 데미지 80
+	{
+		ID = SUBJECT_BETREAYERSATELIER_DAMAGE_80,
+        ACTION_SCRIPT = "SJAction_BetreayersAtelier_Damage80.lua",
+        ID_SIMPLE_DESC = 30,
+        Drop = {    { 58730, -1, -1, 4, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_ATTACK_UP, 15, 1, FALSE },
+        },
+	},
+    
+    -- 32 : 배신자의 화실 : 데미지 130
+	{
+		ID = SUBJECT_BETREAYERSATELIER_DAMAGE_130,
+        ACTION_SCRIPT = "SJAction_BetreayersAtelier_Damage130.lua",
+        ID_SIMPLE_DESC = 31,
+        Drop = {    { 58730, -1, -1, 4, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_DEFFNSE_UP, 20, 1, FALSE },
+        },
+	},
+    
+    -- 33 : 배신자의 화실 : 피격횟수 0
+	{
+		ID = SUBJECT_BETREAYERSATELIER_ATTACKED_0,
+        ACTION_SCRIPT = "SJAction_BetreayersAtelier_Attacked0.lua",
+        ID_SIMPLE_DESC = 32,
+        Drop = {    { 58730, -1, -1, 4, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_CRITICAL_UP, 10, 1, FALSE },
+        },
+	},
+    
+    -- 34 : 배신자의 화실 : 피격횟수 3
+	{
+		ID = SUBJECT_BETREAYERSATELIER_ATTACKED_3,
+        ACTION_SCRIPT = "SJAction_BetreayersAtelier_Attacked3.lua",
+        ID_SIMPLE_DESC = 33,
+        Drop = {    { 58730, -1, -1, 4, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_HP_UP, 5, 1, FALSE },
+        },
+	},
+    
+    -- 35 : 배신자의 화실 : 피격횟수 5
+	{
+		ID = SUBJECT_BETREAYERSATELIER_ATTACKED_5,
+        ACTION_SCRIPT = "SJAction_BetreayersAtelier_Attacked5.lua",
+        ID_SIMPLE_DESC = 34,
+        Drop = {    { 58730, -1, -1, 4, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_ATTACK_UP, 15, 1, FALSE },
+        },
+	},
+    
+    -- 36 : 배신자의 화실 : 백어택 15
+	{
+		ID = SUBJECT_BETREAYERSATELIER_BACKATTACK_15,
+        ACTION_SCRIPT = "SJAction_BetreayersAtelier_BackAttack15.lua",
+        ID_SIMPLE_DESC = 35,
+        Drop = {    { 58730, -1, -1, 4, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_DEFFNSE_UP, 20, 1, FALSE },
+        },
+	},
+    
+    -- 37 : 배신자의 화실 : 백어택 20
+	{
+		ID = SUBJECT_BETREAYERSATELIER_BACKATTACK_20,
+        ACTION_SCRIPT = "SJAction_BetreayersAtelier_BackAttack20.lua",
+        ID_SIMPLE_DESC = 36,
+        Drop = {    { 58730, -1, -1, 4, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_CRITICAL_UP, 10, 1, FALSE },
+        },
+	},
+    
+    -- 38 : 배신자의 화실 : 스킬사용 2
+	{
+		ID = SUBJECT_BETREAYERSATELIER_SKILLUSE_2,
+        ACTION_SCRIPT = "SJAction_BetreayersAtelier_SkillUse2.lua",
+        ID_SIMPLE_DESC = 37,
+        Drop = {    { 58730, -1, -1, 4, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_HP_UP, 5, 1, FALSE },
+        },
+	},
+    
+    -- 39 : 배신자의 화실 : 스킬사용 4
+	{
+		ID = SUBJECT_BETREAYERSATELIER_SKILLUSE_4,
+        ACTION_SCRIPT = "SJAction_BetreayersAtelier_SkillUse4.lua",
+        ID_SIMPLE_DESC = 38,
+        Drop = {    { 58730, -1, -1, 4, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_ATTACK_UP, 15, 1, FALSE },
+        },
+	},
+    
+    -- 40 : 배신자의 화실 : 부활 1
+	{
+		ID = SUBJECT_BETREAYERSATELIER_DIE_1,
+        ACTION_SCRIPT = "SJAction_BetreayersAtelier_Die1.lua",
+        ID_SIMPLE_DESC = 39,
+        Drop = {    { 58730, -1, -1, 4, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_DEFFNSE_UP, 20, 1, FALSE },
+        },
+	},
+    
+    -- 41 : 에델전용 : 커맨드 스킬 : 이베이드
+	{
+		ID = SUBJECT_EDEL_LV10,
+        ACTION_SCRIPT = "SJAction_Edel_Lv10.lua",
+        ID_SIMPLE_DESC = 83,
+        Drop = {    { 58730, -1, -1, 4, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_CRITICAL_UP, 10, 1, FALSE },
+        },
+	},
+    
+    -- 42 : 에델전용 : 커맨드 스킬 : 프린트락
+	{
+		ID = SUBJECT_EDEL_LV11,
+        ACTION_SCRIPT = "SJAction_Edel_Lv11.lua",
+        ID_SIMPLE_DESC = 84,
+        Drop = {    { 58730, -1, -1, 4, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_HP_UP, 5, 1, FALSE },
+        },
+	},
+    
+    -- 43 : 에델전용 : 1단 필살기 : 프렌지 스프린트
+	{
+		ID = SUBJECT_EDEL_LV12,
+        ACTION_SCRIPT = "SJAction_Edel_Lv12.lua",
+        ID_SIMPLE_DESC = 42,
+        Drop = {    { 58730, -1, -1, 4, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_ATTACK_UP, 15, 1, FALSE },
+        },
+	},
+    
+    -- 44 : 어둠에 물든 서재 : 콤보 30회
+	{
+		ID = SUBJECT_DARKLIBRARY_COMBO_30,
+        ACTION_SCRIPT = "SJAction_DarkLibrary_Combo30.lua",
+        ID_SIMPLE_DESC = 43,
+        Drop = {    { 58730, -1, -1, 5, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_DEFFNSE_UP, 20, 1, FALSE },
+        },
+	},
+ 
+    -- 45 : 어둠에 물든 서재 : 데미지 110
+	{
+		ID = SUBJECT_DARKLIBRARY_DAMAGE_110,
+        ACTION_SCRIPT = "SJAction_DarkLibrary_Damage110.lua",
+        ID_SIMPLE_DESC = 44,
+        Drop = {    { 58730, -1, -1, 5, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_CRITICAL_UP, 10, 1, FALSE },
+        },
+	},
+    
+    -- 46 : 어둠에 물든 서재 : 데미지 160
+	{
+		ID = SUBJECT_DARKLIBRARY_DAMAGE_160,
+        ACTION_SCRIPT = "SJAction_DarkLibrary_Damage160.lua",
+        ID_SIMPLE_DESC = 45,
+        Drop = {    { 58730, -1, -1, 5, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_HP_UP, 5, 1, FALSE },
+        },
+	},
+    
+    -- 47 : 어둠에 물든 서재 : 피격횟수 0
+	{
+		ID = SUBJECT_DARKLIBRARY_ATTACKED_0,
+        ACTION_SCRIPT = "SJAction_DarkLibrary_Attacked0.lua",
+        ID_SIMPLE_DESC = 46,
+        Drop = {    { 58730, -1, -1, 5, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_ATTACK_UP, 15, 1, FALSE },
+        },
+	},
+    
+    -- 48 : 어둠에 물든 서재 : 피격횟수 3
+	{
+		ID = SUBJECT_DARKLIBRARY_ATTACKED_3,
+        ACTION_SCRIPT = "SJAction_DarkLibrary_Attacked3.lua",
+        ID_SIMPLE_DESC = 47,
+        Drop = {    { 58730, -1, -1, 5, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_DEFFNSE_UP, 20, 1, FALSE },
+        },
+	},
+    
+    -- 49 : 어둠에 물든 서재 : 피격횟수 5
+	{
+		ID = SUBJECT_DARKLIBRARY_ATTACKED_5,
+        ACTION_SCRIPT = "SJAction_DarkLibrary_Attacked5.lua",
+        ID_SIMPLE_DESC = 48,
+        Drop = {    { 58730, -1, -1, 5, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_CRITICAL_UP, 10, 1, FALSE },
+        },
+	},
+    
+    -- 50 : 어둠에 물든 서재 : 백어택 15
+	{
+		ID = SUBJECT_DARKLIBRARY_BACKATTACK_15,
+        ACTION_SCRIPT = "SJAction_DarkLibrary_BackAttack15.lua",
+        ID_SIMPLE_DESC = 49,
+        Drop = {    { 58730, -1, -1, 5, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_HP_UP, 5, 1, FALSE },
+        },
+	},
+    
+    -- 51 : 어둠에 물든 서재 : 백어택 20
+	{
+		ID = SUBJECT_DARKLIBRARY_BACKATTACK_20,
+        ACTION_SCRIPT = "SJAction_DarkLibrary_BackAttack20.lua",
+        ID_SIMPLE_DESC = 50,
+        Drop = {    { 58730, -1, -1, 5, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_ATTACK_UP, 15, 1, FALSE },
+        },
+	},
+    
+    -- 52 : 어둠에 물든 서재 : 스킬사용 1
+	{
+		ID = SUBJECT_DARKLIBRARY_SKILLUSE_1,
+        ACTION_SCRIPT = "SJAction_DarkLibrary_SkillUse1.lua",
+        ID_SIMPLE_DESC = 51,
+        Drop = {    { 58730, -1, -1, 5, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_DEFFNSE_UP, 20, 1, FALSE },
+        },
+	},
+    
+    -- 53 : 어둠에 물든 서재 : 스킬사용 3
+	{
+		ID = SUBJECT_DARKLIBRARY_SKILLUSE_3,
+        ACTION_SCRIPT = "SJAction_DarkLibrary_SkillUse3.lua",
+        ID_SIMPLE_DESC = 52,
+        Drop = {    { 58730, -1, -1, 5, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_CRITICAL_UP, 10, 1, FALSE },
+        },
+	},
+    
+    -- 54 : 어둠에 물든 서재 : 부활 1
+	{
+		ID = SUBJECT_DARKLIBRARY_DIE_1,
+        ACTION_SCRIPT = "SJAction_DarkLibrary_Die1.lua",
+        ID_SIMPLE_DESC = 53,
+        Drop = {    { 58730, -1, -1, 5, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_HP_UP, 5, 1, FALSE },
+        },
+	},
+    
+    -- 55 : 어둠에 물든 서재 : 부활 0
+	{
+		ID = SUBJECT_DARKLIBRARY_DIE_0,
+        ACTION_SCRIPT = "SJAction_DarkLibrary_Die0.lua",
+        ID_SIMPLE_DESC = 54,
+        Drop = {    { 58730, -1, -1, 5, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_ATTACK_UP, 15, 1, FALSE },
+        },
+	},
+    
+    -- 56 : 에델전용 : 커맨드 스킬 : 쉐도우 스텝
+	{
+		ID = SUBJECT_EDEL_LV13,
+        ACTION_SCRIPT = "SJAction_Edel_Lv13.lua",
+        ID_SIMPLE_DESC = 85,
+        Drop = {    { 58730, -1, -1, 5, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_DEFFNSE_UP, 20, 1, FALSE },
+        },
+	},
+    
+    -- 57 : 에델전용 : 커맨드 스킬 : 콤보 중 프린트락
+	{
+		ID = SUBJECT_EDEL_LV14,
+        ACTION_SCRIPT = "SJAction_Edel_Lv14.lua",
+        ID_SIMPLE_DESC = 86,
+        Drop = {    { 58730, -1, -1, 5, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_CRITICAL_UP, 10, 1, FALSE },
+        },
+	},
+    
+    -- 58 : 에델전용 : 커맨드 스킬 : 플래쉬
+	{
+		ID = SUBJECT_EDEL_LV15,
+        ACTION_SCRIPT = "SJAction_Edel_Lv15.lua",
+        ID_SIMPLE_DESC = 87,
+        Drop = {    { 58730, -1, -1, 5, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_HP_UP, 5, 1, FALSE },
+        },
+	},
+    
+    -- 59 : 아라크네의 둥지 : 콤보 35회(50회로 변경)
+	{
+		ID = SUBJECT_ARACHNESNEST_COMBO_35,
+        ACTION_SCRIPT = "SJAction_ArachnesNest_Combo35.lua",
+        ID_SIMPLE_DESC = 58,
+        Drop = {    { 58730, -1, -1, 5, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_ATTACK_UP, 15, 1, FALSE },
+        },
+	},
+    
+    -- 60 : 아라크네의 둥지 : 데미지 130
+	{
+		ID = SUBJECT_ARACHNESNEST_DAMAGE_130,
+        ACTION_SCRIPT = "SJAction_ArachnesNest_Damage130.lua",
+        ID_SIMPLE_DESC = 59,
+        Drop = {    { 58730, -1, -1, 6, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_DEFFNSE_UP, 20, 1, FALSE },
+        },
+	},
+    
+    -- 61 : 아라크네의 둥지 : 데미지 180
+	{
+		ID = SUBJECT_ARACHNESNEST_DAMAGE_180,
+        ACTION_SCRIPT = "SJAction_ArachnesNest_Damage180.lua",
+        ID_SIMPLE_DESC = 60,
+        Drop = {    { 58730, -1, -1, 6, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_CRITICAL_UP, 10, 1, FALSE },
+        },
+	},
+    
+    -- 62 : 아라크네의 둥지 : 피격횟수 0
+	{
+		ID = SUBJECT_ARACHNESNEST_ATTACKED_0,
+        ACTION_SCRIPT = "SJAction_ArachnesNest_Attacked0.lua",
+        ID_SIMPLE_DESC = 61,
+        Drop = {    { 58730, -1, -1, 6, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_HP_UP, 5, 1, FALSE },
+        },
+	},
+    
+    -- 63 : 아라크네의 둥지 : 피격횟수 3
+	{
+		ID = SUBJECT_ARACHNESNEST_ATTACKED_3,
+        ACTION_SCRIPT = "SJAction_ArachnesNest_Attacked3.lua",
+        ID_SIMPLE_DESC = 62,
+        Drop = {    { 58730, -1, -1, 6, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_ATTACK_UP, 15, 1, FALSE },
+        },
+	},
+    
+    -- 64 : 아라크네의 둥지 : 피격횟수 5
+	{
+		ID = SUBJECT_ARACHNESNEST_ATTACKED_5,
+        ACTION_SCRIPT = "SJAction_ArachnesNest_Attacked5.lua",
+        ID_SIMPLE_DESC = 63,
+        Drop = {    { 58730, -1, -1, 6, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_DEFFNSE_UP, 20, 1, FALSE },
+        },
+	},
+    
+    -- 65 : 아라크네의 둥지 : 백어택 20
+	{
+		ID = SUBJECT_ARACHNESNEST_BACKATTACK_20,
+        ACTION_SCRIPT = "SJAction_ArachnesNest_BackAttack20.lua",
+        ID_SIMPLE_DESC = 64,
+        Drop = {    { 58730, -1, -1, 6, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_CRITICAL_UP, 10, 1, FALSE },
+        },
+	},
+    
+    -- 66 : 아라크네의 둥지 : 백어택 25
+	{
+		ID = SUBJECT_ARACHNESNEST_BACKATTACK_25,
+        ACTION_SCRIPT = "SJAction_ArachnesNest_BackAttack25.lua",
+        ID_SIMPLE_DESC = 65,
+        Drop = {    { 58730, -1, -1, 6, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_HP_UP, 5, 1, FALSE },
+        },
+	},
+    
+    -- 67 : 아라크네의 둥지 : 스킬사용 0
+	{
+		ID = SUBJECT_ARACHNESNEST_SKILLUSE_0,
+        ACTION_SCRIPT = "SJAction_ArachnesNest_SkillUse0.lua",
+        ID_SIMPLE_DESC = 66,
+        Drop = {    { 58730, -1, -1, 6, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_ATTACK_UP, 15, 1, FALSE },
+        },
+	},
+    
+    -- 68 : 아라크네의 둥지 : 스킬사용 1
+	{
+		ID = SUBJECT_ARACHNESNEST_SKILLUSE_1,
+        ACTION_SCRIPT = "SJAction_ArachnesNest_SkillUse1.lua",
+        ID_SIMPLE_DESC = 67,
+        Drop = {    { 58730, -1, -1, 6, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_DEFFNSE_UP, 20, 1, FALSE },
+        },
+	},
+    
+    -- 69 : 아라크네의 둥지 : 부활 1
+	{
+		ID = SUBJECT_ARACHNESNEST_DIE_1,
+        ACTION_SCRIPT = "SJAction_ArachnesNest_Die1.lua",
+        ID_SIMPLE_DESC = 68,
+        Drop = {    { 58730, -1, -1, 6, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_CRITICAL_UP, 10, 1, FALSE },
+        },
+	},
+    
+    -- 70 : 아라크네의 둥지 : 부활 0
+	{
+		ID = SUBJECT_ARACHNESNEST_DIE_0,
+        ACTION_SCRIPT = "SJAction_ArachnesNest_Die0.lua",
+        ID_SIMPLE_DESC = 69,
+        Drop = {    { 58730, -1, -1, 6, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_HP_UP, 5, 1, FALSE },
+        },
+	},
+    
+    -- 71 : 에델전용 : 1단 필살기 : 서큘러
+	{
+		ID = SUBJECT_EDEL_LV16,
+        ACTION_SCRIPT = "SJAction_Edel_Lv16.lua",
+        ID_SIMPLE_DESC = 70,
+        Drop = {    { 58730, -1, -1, 6, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_ATTACK_UP, 15, 1, FALSE },
+        },
+	},
+    
+    -- 72 : 에델전용 : 커맨드 스킬 : 에어
+	{
+		ID = SUBJECT_EDEL_LV17,
+        ACTION_SCRIPT = "SJAction_Edel_Lv17.lua",
+        ID_SIMPLE_DESC = 88,
+        Drop = {    { 58730, -1, -1, 6, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_DEFFNSE_UP, 20, 1, FALSE },
+        },
+	},
+    
+    -- 73 : 에델전용 : 커맨드 스킬 : 에어 프린트락
+	{
+		ID = SUBJECT_EDEL_LV18,
+        ACTION_SCRIPT = "SJAction_Edel_Lv18.lua",
+        ID_SIMPLE_DESC = 89,
+        Drop = {    { 58730, -1, -1, 6, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_CRITICAL_UP, 10, 1, FALSE },
+        },
+	},
+    
+    -- 74 : 던전공용 : 30초 내에 몬스터를 처치하라!
+	{
+		ID = SUBJECT_DUNCOMMON_CLEAR_30s,
+        ACTION_SCRIPT = "SJAction_Common_Clear30s.lua",
+        ID_SIMPLE_DESC = 73,
+        Drop = {    { 58730, -1, -1, 6, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_HP_UP, 5, 1, FALSE },
+        },
+	},
+    
+    -- 75 : 던전공용 : 40초 내에 몬스터를 처치하라!
+	{
+		ID = SUBJECT_DUNCOMMON_CLEAR_40s,
+        ACTION_SCRIPT = "SJAction_Common_Clear40s.lua",
+        ID_SIMPLE_DESC = 74,
+        Drop = {    { 58730, -1, -1, 6, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_ATTACK_UP, 15, 1, FALSE },
+        },
+	},
+    
+    -- 76 : 던전공용 : 50초 내에 몬스터를 처치하라!
+	{
+		ID = SUBJECT_DUNCOMMON_CLEAR_50s,
+        ACTION_SCRIPT = "SJAction_Common_Clear50s.lua",
+        ID_SIMPLE_DESC = 75,
+        Drop = {    { 58730, -1, -1, 6, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_DEFFNSE_UP, 20, 1, FALSE },
+        },
+	},
+    
+    -- 77 : 던전공용 : 1분 내에 몬스터를 처치하라!
+	{
+		ID = SUBJECT_DUNCOMMON_CLEAR_1m,
+        ACTION_SCRIPT = "SJAction_Common_Clear1m.lua",
+        ID_SIMPLE_DESC = 76,
+        Drop = {    { 58730, -1, -1, 6, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_CRITICAL_UP, 10, 1, FALSE },
+        },
+	},
+    
+    -- 78 : 던전공용 : 1분 30초 내에 몬스터를 처치하라!
+	{
+		ID = SUBJECT_DUNCOMMON_CLEAR_1m30s,
+        ACTION_SCRIPT = "SJAction_Common_Clear1m30s.lua",
+        ID_SIMPLE_DESC = 77,
+        Drop = {    { 58730, -1, -1, 6, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_HP_UP, 5, 1, FALSE },
+        },
+	},
+    
+    -- 79 : 던전공용 : 2분 내에 몬스터를 처치하라!
+	{
+		ID = SUBJECT_DUNCOMMON_CLEAR_2m,
+        ACTION_SCRIPT = "SJAction_Common_Clear2m.lua",
+        ID_SIMPLE_DESC = 78,
+        Drop = {    { 58730, -1, -1, 6, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_ATTACK_UP, 15, 1, FALSE },
+        },
+	},
+    
+    -- 80 : 던전공용 : 2분 30초 내에 몬스터를 처치하라!
+	{
+		ID = SUBJECT_DUNCOMMON_CLEAR_2m30s,
+        ACTION_SCRIPT = "SJAction_Common_Clear2m30s.lua",
+        ID_SIMPLE_DESC = 79,
+        Drop = {    { 58730, -1, -1, 6, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_DEFFNSE_UP, 20, 1, FALSE },
+        },
+	},
+    
+    -- 81 : 던전공용 : 3분 내에 몬스터를 처치하라!
+	{
+		ID = SUBJECT_DUNCOMMON_CLEAR_3m,
+        ACTION_SCRIPT = "SJAction_Common_Clear3m.lua",
+        ID_SIMPLE_DESC = 80,
+        Drop = {    { 58730, -1, -1, 6, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_CRITICAL_UP, 10, 1, FALSE },
+        },
+	},
+    
+    -- 82 : 던전공용 : 30초내 15번 연속으로 공격하라!
+	{
+		ID = SUBJECT_DUNCOMMON_COMBO15_30s,
+        ACTION_SCRIPT = "SJAction_Common_Combo15_30s.lua",
+        ID_SIMPLE_DESC = 90,
+        Drop = {    { 114170, -1, -1, 1, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_ATTACK_UP, 15, 1, FALSE },
+        },
+	},
+    
+    -- 83 : 던전공용 : 40초내 20번 연속으로 공격하라!
+	{
+		ID = SUBJECT_DUNCOMMON_COMBO20_40s,
+        ACTION_SCRIPT = "SJAction_Common_Combo20_40s.lua",
+        ID_SIMPLE_DESC = 91,
+        Drop = {    { 114170, -1, -1, 2, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_DEFFNSE_UP, 20, 1, FALSE },
+        },
+	},
+
+    -- 84 : 던전공용 : 60초내 30번 연속으로 공격하라!
+	{
+		ID = SUBJECT_DUNCOMMON_COMBO30_60s,
+        ACTION_SCRIPT = "SJAction_Common_Combo30_60s.lua",
+        ID_SIMPLE_DESC = 92,
+        Drop = {    { 114170, -1, -1, 3, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_CRITICAL_UP, 10, 1, FALSE },
+        },
+	},
+    
+    -- 85 : 던전공용 : 20초내 적의 뒤를 5번 연속으로 공격하라!
+	{
+		ID = SUBJECT_DUNCOMMON_BACKATTACK_5_20s,
+        ACTION_SCRIPT = "SJAction_Common_BackAttack5_20s.lua",
+        ID_SIMPLE_DESC = 93,
+        Drop = {    { 114170, -1, -1, 1, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_ATTACK_UP, 15, 1, FALSE },
+        },
+	},
+    
+    -- 86 : 던전공용 : 40초내 적의 뒤를 10번 연속으로 공격하라!
+	{
+		ID = SUBJECT_DUNCOMMON_BACKATTACK_10_40s,
+        ACTION_SCRIPT = "SJAction_Common_BackAttack10_40s.lua",
+        ID_SIMPLE_DESC = 94,
+        Drop = {    { 114170, -1, -1, 2, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_DEFFNSE_UP, 20, 1, FALSE },
+        },
+	},
+    
+    -- 87 : 던전공용 : 60초내 적의 뒤를 15번 연속으로 공격하라!
+	{
+		ID = SUBJECT_DUNCOMMON_BACKATTACK_15_60s,
+        ACTION_SCRIPT = "SJAction_Common_BackAttack15_60s.lua",
+        ID_SIMPLE_DESC = 95,
+        Drop = {    { 114170, -1, -1, 3, },   },
+		Buff =                                  -- 보상 : 버프( 클라에서 참조 )
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_CRITICAL_UP, 10, 1, FALSE },
+        },
+	},
+
+
+
+--마계의 통로 액션과제 시작	
+    -- 90 : 콤보 10회
+	{
+	ID = SUBJECT_DUNGEON_COMBO_10,
+        ACTION_SCRIPT = "SJAction_Dungeon_Combo10.lua",
+        ID_SIMPLE_DESC = 1,
+        Drop = {    { 58730, -1, -1, 1, },   },
+        Buff =                                  -- 보상 : 버프20초 동안 방어력 상승
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_DEFFNSE_UP, 20, 1, FALSE },
+        },
+	},
+    -- 91 : 콤보 15회
+	{
+	ID = SUBJECT_DUNGEON_COMBO_15,
+        ACTION_SCRIPT = "SJAction_Dungeon_Combo15.lua",
+        ID_SIMPLE_DESC = 10,
+        Drop = {    { 58730, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프20초 동안 방어력 상승
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_DEFFNSE_UP, 20, 1, FALSE },
+        },
+	}, 
+    -- 92 : 콤보 20회
+	{
+	ID = SUBJECT_DUNGEON_COMBO_20,
+        ACTION_SCRIPT = "SJAction_Dungeon_Combo20.lua",
+        ID_SIMPLE_DESC = 19,
+        Drop = {    { 58730, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프20초 동안 방어력 상승
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_DEFFNSE_UP, 20, 1, FALSE },
+        },
+	},	
+    -- 93 : 배신자의 화실 : 콤보 25회
+	{
+	ID = SUBJECT_DUNGEON_COMBO_25,
+        ACTION_SCRIPT = "SJAction_Dungeon_Combo25.lua",
+        ID_SIMPLE_DESC = 29,
+        Drop = {    { 58730, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프20초 동안 방어력 상승
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_DEFFNSE_UP, 20, 1, FALSE },
+        },
+	},
+    -- 94 : 콤보 30회
+	{
+	ID = SUBJECT_DUNGEON_COMBO_30,
+        ACTION_SCRIPT = "SJAction_DarkLibrary_Combo30.lua",
+        ID_SIMPLE_DESC = 43,
+        Drop = {    { 58730, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프20초 동안 방어력 상승
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_DEFFNSE_UP, 20, 1, FALSE },
+        },
+	},
+    -- 95 : 콤보 35회
+	{
+	ID = SUBJECT_DUNGEON_COMBO_35,
+        ACTION_SCRIPT = "SJAction_Dungeon_Combo35.lua",
+        ID_SIMPLE_DESC = 58,
+        Drop = {    { 58730, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프20초 동안 방어력 상승
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_DEFFNSE_UP, 20, 1, FALSE },
+        },
+	},
+    -- 96 : 30초내 15번 연속으로 공격하라!
+	{
+	ID = SUBJECT_DUNGEON_COMBO_15_30S,
+        ACTION_SCRIPT = "SJAction_Dungeon_Combo15_30s.lua",
+        ID_SIMPLE_DESC = 90,
+        Drop = {    { 58730, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프20초 동안 방어력 상승
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_DEFFNSE_UP, 20, 1, FALSE },
+        },
+	},
+    
+    -- 97 : 40초내 20번 연속으로 공격하라!
+	{
+	ID = SUBJECT_DUNGEON_COMBO_20_40S,
+        ACTION_SCRIPT = "SJAction_Dungeon_Combo20_40s.lua",
+        ID_SIMPLE_DESC = 91,
+        Drop = {    { 58730, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프20초 동안 방어력 상승
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_DEFFNSE_UP, 20, 1, FALSE },
+        },
+	},
+
+    -- 98 : 60초내 30번 연속으로 공격하라!
+	{
+	ID = SUBJECT_DUNGEON_COMBO_30_60S,
+        ACTION_SCRIPT = "SJAction_Dungeon_Combo30_60s.lua",
+        ID_SIMPLE_DESC = 92,
+         Drop = {    { 58730, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프20초 동안 방어력 상승
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_DEFFNSE_UP, 20, 1, FALSE },
+        },
+	},
+ 
+    -- 99 : 백어택 10
+	{
+	ID = SUBJECT_DUNGEON_BACKATTACK_10,
+        ACTION_SCRIPT = "SJAction_Dungeon_BackAttack10.lua",
+        ID_SIMPLE_DESC = 24,
+        Drop = {    { 58760, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프5초 동안 HP 회복
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_HP_UP, 5, 1, FALSE },
+        },
+	},
+    
+    -- 100 : 백어택 15
+	{
+	ID = SUBJECT_DUNGEON_BACKATTACK_15,
+        ACTION_SCRIPT = "SJAction_Dungeon_BackAttack15.lua",
+        ID_SIMPLE_DESC = 25,
+         Drop = {    { 58760, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프5초 동안 HP 회복
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_HP_UP, 5, 1, FALSE },
+        },
+	},
+
+    -- 101 : 백어택 20
+	{
+	ID = SUBJECT_DUNGEON_BACKATTACK_20,
+        ACTION_SCRIPT = "SJAction_Dungeon_BackAttack20.lua",
+        ID_SIMPLE_DESC = 64,
+        Drop = {    { 58760, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프5초 동안 HP 회복
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_HP_UP, 5, 1, FALSE },
+        },
+	},
+    
+    -- 102 : 백어택 25
+	{
+	ID = SUBJECT_DUNGEON_BACKATTACK_25,
+        ACTION_SCRIPT = "SJAction_Dungeon_BackAttack25.lua",
+        ID_SIMPLE_DESC = 65,
+        Drop = {    { 58760, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프5초 동안 HP 회복
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_HP_UP, 5, 1, FALSE },
+        },
+	},
+
+    -- 103 : 20초내 적의 뒤를 5번 연속으로 공격하라!
+	{
+	ID = SUBJECT_DUNGEON_BACKATTACK_5_20S,
+        ACTION_SCRIPT = "SJAction_Dungeon_BackAttack5_20s.lua",
+        ID_SIMPLE_DESC = 93,
+         Drop = {    { 58760, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프5초 동안 HP 회복
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_HP_UP, 5, 1, FALSE },
+        },
+	},
+    
+    -- 104 : 40초내 적의 뒤를 10번 연속으로 공격하라!
+	{
+	ID = SUBJECT_DUNGEON_BACKATTACK_10_40S,
+        ACTION_SCRIPT = "SJAction_Dungeon_BackAttack10_40s.lua",
+        ID_SIMPLE_DESC = 94,
+        Drop = {    { 58760, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프5초 동안 HP 회복
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_HP_UP, 5, 1, FALSE },
+        },
+	},
+    
+    -- 105 : 60초내 적의 뒤를 15번 연속으로 공격하라!
+	{
+	ID = SUBJECT_DUNGEON_BACKATTACK_15_60S,
+        ACTION_SCRIPT = "SJAction_Dungeon_BackAttack15_60s.lua",
+        ID_SIMPLE_DESC = 95,
+        Drop = {    { 58760, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프5초 동안 HP 회복
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_HP_UP, 5, 1, FALSE },
+        },
+	},
+
+    -- 106 : 30초 내에 몬스터를 처치하라!
+	{
+	ID = SUBJECT_DUNGEON_CLEAR_30S,
+        ACTION_SCRIPT = "SJAction_Dungeon_Clear30s.lua",
+        ID_SIMPLE_DESC = 73,
+        Drop = {    { 58760, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프5초 동안 HP 회복
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_HP_UP, 5, 1, FALSE },
+        },
+	},
+    
+    -- 107 : 40초 내에 몬스터를 처치하라!
+	{
+	ID = SUBJECT_DUNGEON_CLEAR_40S,
+        ACTION_SCRIPT = "SJAction_Dungeon_Clear40s.lua",
+        ID_SIMPLE_DESC = 74,
+        Drop = {    { 58760, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프5초 동안 HP 회복
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_HP_UP, 5, 1, FALSE },
+        },
+	},
+    
+    -- 108 : 50초 내에 몬스터를 처치하라!
+	{
+	ID = SUBJECT_DUNGEON_CLEAR_50S,
+        ACTION_SCRIPT = "SJAction_Dungeon_Clear50s.lua",
+        ID_SIMPLE_DESC = 75,
+        Drop = {    { 58760, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프5초 동안 HP 회복
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_HP_UP, 5, 1, FALSE },
+        },
+	},
+    
+    -- 109 : 1분 내에 몬스터를 처치하라!
+	{
+	ID = SUBJECT_DUNGEON_CLEAR_1M,
+        ACTION_SCRIPT = "SJAction_Dungeon_Clear1m.lua",
+        ID_SIMPLE_DESC = 76,
+        Drop = {    { 58760, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프5초 동안 HP 회복
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_HP_UP, 5, 1, FALSE },
+        },
+	},
+    
+    -- 110 : 1분 30초 내에 몬스터를 처치하라!
+	{
+	ID = SUBJECT_DUNGEON_CLEAR_1M30S,
+        ACTION_SCRIPT = "SJAction_Dungeon_Clear1m30s.lua",
+        ID_SIMPLE_DESC = 77,
+        Drop = {    { 58760, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프5초 동안 HP 회복
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_HP_UP, 5, 1, FALSE },
+        },
+	},
+    
+    -- 111 : 2분 내에 몬스터를 처치하라!
+	{
+	ID = SUBJECT_DUNGEON_CLEAR_2M,
+        ACTION_SCRIPT = "SJAction_Dungeon_Clear2m.lua",
+        ID_SIMPLE_DESC = 78,
+        Drop = {    { 58760, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프5초 동안 HP 회복
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_HP_UP, 5, 1, FALSE },
+        },
+	},
+    
+    -- 112 : 2분 30초 내에 몬스터를 처치하라!
+	{
+	ID = SUBJECT_DUNGEON_CLEAR_2M30S,
+        ACTION_SCRIPT = "SJAction_Dungeon_Clear2m30s.lua",
+        ID_SIMPLE_DESC = 79,
+        Drop = {    { 58760, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프5초 동안 HP 회복
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_HP_UP, 5, 1, FALSE },
+        },
+	},
+    
+    -- 113 : 3분 내에 몬스터를 처치하라!
+	{
+	ID = SUBJECT_DUNGEON_CLEAR_3M,
+        ACTION_SCRIPT = "SJAction_Dungeon_Clear3m.lua",
+        ID_SIMPLE_DESC = 80,
+        Drop = {    { 58760, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프5초 동안 HP 회복
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_HP_UP, 5, 1, FALSE },
+        },
+	},
+
+    -- 114 : 데미지 50
+	{
+	ID = SUBJECT_DUNGEON_DAMAGE_50,
+        ACTION_SCRIPT = "SJAction_Dungeon_Damage50.lua",
+        ID_SIMPLE_DESC = 2,
+        Drop = {    { 58730, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프15초 동안 공격력 상승
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_ATTACK_UP, 15, 1, FALSE },
+        },
+	},
+
+    -- 115 : 데미지 70
+	{
+	ID = SUBJECT_DUNGEON_DAMAGE_70,
+        ACTION_SCRIPT = "SJAction_Dungeon_Damage70.lua",
+        ID_SIMPLE_DESC = 11,
+        Drop = {    { 58730, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프15초 동안 공격력 상승
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_ATTACK_UP, 15, 1, FALSE },
+        },
+	}, 
+
+    -- 116 : 데미지 80
+	{
+	ID = SUBJECT_DUNGEON_DAMAGE_80,
+        ACTION_SCRIPT = "SJAction_Dungeon_Damage80.lua",
+        ID_SIMPLE_DESC = 30,
+        Drop = {    { 58730, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프15초 동안 공격력 상승
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_ATTACK_UP, 15, 1, FALSE },
+        },
+	},
+
+    -- 117 : 데미지 90
+	{
+	ID = SUBJECT_DUNGEON_DAMAGE_90,
+        ACTION_SCRIPT = "SJAction_Dungeon_Damage90.lua",
+        ID_SIMPLE_DESC = 20,
+        Drop = {    { 58730, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프15초 동안 공격력 상승
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_ATTACK_UP, 15, 1, FALSE },
+        },
+	},
+ 
+    -- 118 : 데미지 100
+	{
+	ID = SUBJECT_DUNGEON_DAMAGE_100,
+        ACTION_SCRIPT = "SJAction_Dungeon_Damage100.lua",
+        ID_SIMPLE_DESC = 3,
+          Drop = {    { 58730, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프15초 동안 공격력 상승
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_ATTACK_UP, 15, 1, FALSE },
+        },
+	},	
+
+    -- 119 : 데미지 110
+	{
+	ID = SUBJECT_DUNGEON_DAMAGE_110,
+        ACTION_SCRIPT = "SJAction_Dungeon_Damage110.lua",
+        ID_SIMPLE_DESC = 44,
+        Drop = {    { 58730, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프15초 동안 공격력 상승
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_ATTACK_UP, 15, 1, FALSE },
+        },
+	},
+	
+    -- 120 : 데미지 120
+	{
+	ID = SUBJECT_DUNGEON_DAMAGE_120,
+        ACTION_SCRIPT = "SJAction_Dungeon_Damage120.lua",
+        ID_SIMPLE_DESC = 12,
+        Drop = {    { 58730, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프15초 동안 공격력 상승
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_ATTACK_UP, 15, 1, FALSE },
+        },
+	}, 
+	
+    -- 121 : 데미지 130
+	{
+	ID = SUBJECT_DUNGEON_DAMAGE_130,
+        ACTION_SCRIPT = "SJAction_Dungeon_Damage130.lua",
+        ID_SIMPLE_DESC = 31,
+        Drop = {    { 58730, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프15초 동안 공격력 상승
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_ATTACK_UP, 15, 1, FALSE },
+        },
+	},	
+	
+    -- 122 : 데미지 140
+	{
+	ID = SUBJECT_DUNGEON_DAMAGE_140,
+        ACTION_SCRIPT = "SJAction_Dungeon_Damage140.lua",
+        ID_SIMPLE_DESC = 21,
+        Drop = {    { 58730, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프15초 동안 공격력 상승
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_ATTACK_UP, 15, 1, FALSE },
+        },
+	},
+
+	    
+    -- 123 : 데미지 160
+	{
+	ID = SUBJECT_DUNGEON_DAMAGE_160,
+        ACTION_SCRIPT = "SJAction_Dungeon_Damage160.lua",
+        ID_SIMPLE_DESC = 45,
+        Drop = {    { 58730, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프15초 동안 공격력 상승
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_ATTACK_UP, 15, 1, FALSE },
+        },
+	},
+
+    -- 124 : 데미지 180
+	{
+	ID = SUBJECT_DUNGEON_DAMAGE_180,
+        ACTION_SCRIPT = "SJAction_Dungeon_Damage180.lua",
+        ID_SIMPLE_DESC = 60,
+        Drop = {    { 58730, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프15초 동안 공격력 상승
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_ATTACK_UP, 15, 1, FALSE },
+        },
+	},
+
+    -- 125 : 피격횟수 3
+	{
+	ID = SUBJECT_DUNGEON_ATTACKED_3,
+        ACTION_SCRIPT = "SJAction_Dungeon_Attacked3.lua",
+        ID_SIMPLE_DESC = 5,
+        Drop = {    { 58730, -1, -1, 1, },   },
+        Buff =                                  -- 보상 : 버프20초 동안 방어력 상승
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_DEFFNSE_UP, 20, 1, FALSE },
+        },
+	},
+
+    -- 126 : 피격횟수 5
+	{
+	ID = SUBJECT_DUNGEON_ATTACKED_5,
+        ACTION_SCRIPT = "SJAction_Dungeon_Attacked5.lua",
+        ID_SIMPLE_DESC = 34,
+        Drop = {    { 58730, -1, -1, 1, },   },
+        Buff =                                  -- 보상 : 버프20초 동안 방어력 상승
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_DEFFNSE_UP, 20, 1, FALSE },
+        },
+	},
+	
+    -- 127 : 저주받은 정원 : 피격횟수 0
+	{
+	ID = SUBJECT_DUNGEON_ATTACKED_0,
+        ACTION_SCRIPT = "SJAction_Dungeon_Attacked0.lua",
+        ID_SIMPLE_DESC = 4,
+        Drop = {    { 58730, -1, -1, 1, },   },
+        Buff =                                  -- 보상 : 버프20초 동안 방어력 상승
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_DEFFNSE_UP, 20, 1, FALSE },
+        },
+	},
+
+    -- 128 : 부활 1
+	{
+	ID = SUBJECT_DUNGEON_DIE_1,
+        ACTION_SCRIPT = "SJAction_Dungeon_Die1.lua",
+        ID_SIMPLE_DESC = 39,
+        Drop = {    { 114170, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프10초 동안 치명타 100%
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_CRITICAL_UP, 10, 1, FALSE },
+        },
+	},
+	
+    -- 129 : 부활 0
+	{
+	ID = SUBJECT_DUNGEON_DIE_0,
+        ACTION_SCRIPT = "SJAction_Dungeon_Die0.lua",
+        ID_SIMPLE_DESC = 54,
+         Drop = {    { 114170, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프10초 동안 치명타 100%
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_CRITICAL_UP, 10, 1, FALSE },
+        },
+	},
+
+	-- 130 : 스킬사용 1
+	{
+	ID = SUBJECT_DUNGEON_SKILLUSE_1,
+        ACTION_SCRIPT = "SJAction_Dungeon_SkillUse1.lua",
+        ID_SIMPLE_DESC = 51,
+           Drop = {    { 114170, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프10초 동안 치명타 100%
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_CRITICAL_UP, 10, 1, FALSE },
+        },
+	},
+
+	-- 131 : 스킬사용 2
+	{
+	ID = SUBJECT_DUNGEON_SKILLUSE_2,
+        ACTION_SCRIPT = "SJAction_Dungeon_SkillUse2.lua",
+        ID_SIMPLE_DESC = 26,
+        Drop = {    { 114170, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프10초 동안 치명타 100%
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_CRITICAL_UP, 10, 1, FALSE },
+        },
+	},	
+
+	-- 132 : 스킬사용 3
+	{
+	ID = SUBJECT_DUNGEON_SKILLUSE_3,
+        ACTION_SCRIPT = "SJAction_Dungeon_SkillUse3.lua",
+        ID_SIMPLE_DESC = 6,
+        Drop = {    { 114170, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프10초 동안 치명타 100%
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_CRITICAL_UP, 10, 1, FALSE },
+        },
+	},
+
+	-- 133 : 스킬사용 4
+	{
+	ID = SUBJECT_DUNGEON_SKILLUSE_4,
+        ACTION_SCRIPT = "SJAction_Dungeon_SkillUse4.lua",
+        ID_SIMPLE_DESC = 27,
+        Drop = {    { 114170, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프10초 동안 치명타 100%
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_CRITICAL_UP, 10, 1, FALSE },
+        },
+	}, 
+ 
+    -- 134 : 스킬사용 5
+	{
+	ID = SUBJECT_DUNGEON_SKILLUSE_5,
+        ACTION_SCRIPT = "SJAction_Dungeon_SkillUse5.lua",
+        ID_SIMPLE_DESC = 7,
+        Drop = {    { 114170, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프10초 동안 치명타 100%
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_CRITICAL_UP, 10, 1, FALSE },
+        },
+	},
+	
+	-- 135 : [블라스트]를 사용하여 적을 공격하라.
+	{
+		ID = SUBJECT_BEIGAS_LV1,
+		ACTION_SCRIPT = "SJAction_Beigas_Lv1.lua",
+		ID_SIMPLE_DESC = 96,
+		Drop = {    { 114170, -1, -1, 1, },   },
+        Buff =                                  -- 보상 : 버프20초 동안 방어력 상승
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_DEFFNSE_UP, 20, 1, FALSE },
+        },
+	},
+	
+	-- 136 : [서큘러]를 2번 사용하라.\n커맨드 : 콤보 중 ↑
+	{
+		ID = SUBJECT_BEIGAS_LV2,
+		ACTION_SCRIPT = "SJAction_Beigas_Lv2.lua",
+		ID_SIMPLE_DESC = 96,
+		Drop = {    { 114170, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프5초 동안 HP 회복
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_HP_UP, 5, 1, FALSE },
+        },
+	},
+	
+	-- 137 : [백스텝]을 3번 사용하라.\n커맨드 : 콤보 중 ←
+	{
+		ID = SUBJECT_BEIGAS_LV4,
+		ACTION_SCRIPT = "SJAction_Beigas_Lv4.lua",
+		ID_SIMPLE_DESC = 98,
+		Drop = {    { 114170, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프15초 동안 공격력 상승
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_ATTACK_UP, 15, 1, FALSE },
+        },
+	},
+	
+	-- 138 : [래비지]를 사용하여 적을 공격하라.
+	{
+		ID = SUBJECT_BEIGAS_LV5,
+		ACTION_SCRIPT = "SJAction_Beigas_Lv5.lua",
+		ID_SIMPLE_DESC = 99,
+		Drop = {    { 114170, -1, -1, 1, },   },
+		Buff =                                  -- 보상 : 버프10초 동안 치명타 100%
+			{ 
+				-- BuffID, BuffTime, BuffLevel, IsLocalBuff
+				{ EGC_EFFECT_ACTION_SUBJECT_CRITICAL_UP, 10, 1, FALSE },
+			},
+	},
+
+	-- 139 : [백스텝 응용]을 3번 사용하라.\n커맨드 : 백스텝 중 ←
+	{
+		ID = SUBJECT_BEIGAS_LV7,
+		ACTION_SCRIPT = "SJAction_Beigas_Lv7.lua",
+		ID_SIMPLE_DESC = 100,
+		Drop = {    { 114170, -1, -1, 1, },   },
+        Buff =                                  -- 보상 : 버프20초 동안 방어력 상승
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_DEFFNSE_UP, 20, 1, FALSE },
+        },
+	},
+
+	-- 140 : [데쓰 커레스]를 사용하여 적을 공격하라.
+	{
+		ID = SUBJECT_BEIGAS_LV8,
+		ACTION_SCRIPT = "SJAction_Beigas_Lv8.lua",
+		ID_SIMPLE_DESC = 101,
+		Drop = {    { 114170, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프5초 동안 HP 회복
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_HP_UP, 5, 1, FALSE },
+        },
+	},
+	
+	-- 141 : [점프 공격 응용]을 3번 사용하라.\n커맨드 : 점프 중 ↓ Z
+	{
+		ID = SUBJECT_BEIGAS_LV10,
+		ACTION_SCRIPT = "SJAction_Beigas_Lv10.lua",
+		ID_SIMPLE_DESC = 102,
+		Drop = {    { 114170, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프15초 동안 공격력 상승
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_ATTACK_UP, 15, 1, FALSE },
+        },
+	},
+	
+	-- 142 : [익스플로시브]를 사용하여 적을 공격하라.
+	{
+		ID = SUBJECT_BEIGAS_LV11,
+		ACTION_SCRIPT = "SJAction_Beigas_Lv11.lua",
+		ID_SIMPLE_DESC = 103,
+		Drop = {    { 114170, -1, -1, 1, },   },
+		Buff =                                  -- 보상 : 버프10초 동안 치명타 100%
+			{ 
+				-- BuffID, BuffTime, BuffLevel, IsLocalBuff
+				{ EGC_EFFECT_ACTION_SUBJECT_CRITICAL_UP, 10, 1, FALSE },
+			},
+	},
+	
+	-- 143 : [블랙 실드]를 사용하라.
+	{
+		ID = SUBJECT_BEIGAS_LV12,
+		ACTION_SCRIPT = "SJAction_Beigas_Lv12.lua",
+		ID_SIMPLE_DESC = 104,
+		Drop = {    { 114170, -1, -1, 1, },   },
+        Buff =                                  -- 보상 : 버프20초 동안 방어력 상승
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_DEFFNSE_UP, 20, 1, FALSE },
+        },
+	},
+	
+	-- 144 : [대쉬공격 응용]을 사용 적을 3번 공격하라.\n커맨드 : 대쉬공격 중 ↓
+	{
+		ID = SUBJECT_BEIGAS_LV13,
+		ACTION_SCRIPT = "SJAction_Beigas_Lv13.lua",
+		ID_SIMPLE_DESC = 105,
+		Drop = {    { 114170, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프5초 동안 HP 회복
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_HP_UP, 5, 1, FALSE },
+        },
+	},
+	
+	-- 145 : [오버드라이브]를 사용하여 적을 공격하라.
+	{
+		ID = SUBJECT_BEIGAS_LV14,
+		ACTION_SCRIPT = "SJAction_Beigas_Lv14.lua",
+		ID_SIMPLE_DESC = 106,
+		Drop = {    { 114170, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프15초 동안 공격력 상승
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_ATTACK_UP, 15, 1, FALSE },
+        },
+	},
+	
+	-- 146 : [베놈]을 3번 사용하라.
+	{
+		ID = SUBJECT_BEIGAS_LV15,
+		ACTION_SCRIPT = "SJAction_Beigas_Lv15.lua",
+		ID_SIMPLE_DESC = 107,
+		Drop = {    { 114170, -1, -1, 1, },   },
+		Buff =                                  -- 보상 : 버프10초 동안 치명타 100%
+			{ 
+				-- BuffID, BuffTime, BuffLevel, IsLocalBuff
+				{ EGC_EFFECT_ACTION_SUBJECT_CRITICAL_UP, 10, 1, FALSE },
+			},
+	},
+	
+	-- 147 : [디멘션 크레비스]를 사용하여 적을 이동시켜라.
+	{
+		ID = SUBJECT_BEIGAS_LV16,
+		ACTION_SCRIPT = "SJAction_Beigas_Lv16.lua",
+		ID_SIMPLE_DESC = 108,
+		Drop = {    { 114170, -1, -1, 1, },   },
+        Buff =                                  -- 보상 : 버프20초 동안 방어력 상승
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_DEFFNSE_UP, 20, 1, FALSE },
+        },
+	},
+	
+	-- 148 : [디스토어션]을 사용하여 적을 공격하라.
+	{
+		ID = SUBJECT_BEIGAS_LV17,
+		ACTION_SCRIPT = "SJAction_Beigas_Lv17.lua",
+		ID_SIMPLE_DESC = 109,
+		Drop = {    { 114170, -1, -1, 1, },   },
+	Buff =                                  -- 보상 : 버프5초 동안 HP 회복
+        { 
+            -- BuffID, BuffTime, BuffLevel, IsLocalBuff
+            { EGC_EFFECT_ACTION_SUBJECT_HP_UP, 5, 1, FALSE },
+        },
+	},
+}

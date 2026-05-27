@@ -1,0 +1,4664 @@
+LEVEL_EASY = 0
+LEVEL_NORMAL = 1
+LEVEL_HARD = 2
+LEVEL_HELL = 255
+quest = {
+  QuestSign0 = {
+    ID = GC_GM_QUEST0,
+    Name = str_quest_name1,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 0,
+    HIGH_LEVEL = 2,
+    TGFileName = "Dungeon_TrialForest_1.stg",	
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name1,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 0,
+        HIGH_LEVEL = 2,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 23.7750857142857,
+        RANK_DECREASE_NUM = 0.360228571428571,
+        RANK_TOTAL_SCORE = 11684.1830889395,
+        TGFileName = "Dungeon_TrialForest_1.stg"
+      }
+    }
+  },
+  QuestSign1 = {
+    ID = GC_GM_QUEST1,
+    Name = str_quest_name2,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 2,
+    HIGH_LEVEL = 4,
+    TGFileName = "Dungeon_OrdealTower_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 2,
+        HIGH_LEVEL = 4,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 28.4759574468085,
+        RANK_DECREASE_NUM = 0.489617706237425,
+        RANK_TOTAL_SCORE = 18792.4936076468,
+        TGFileName = "Dungeon_OrdealTower_1.stg"
+      }
+    }
+  },
+  QuestSign2 = {
+    ID = GC_GM_QUEST2,
+    Name = str_quest_name3,
+    Desc = str_quest_desc2,
+    LOW_LEVEL = 4,
+    HIGH_LEVEL = 6,
+    TGFileName = "Dungeon_SerdinOutside_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name3,
+        Desc = str_quest_desc2,
+        LOW_LEVEL = 4,
+        HIGH_LEVEL = 6,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 44.6903225806452,
+        RANK_DECREASE_NUM = 0.98587439957303,
+        RANK_TOTAL_SCORE = 38905.7146290396,
+        TGFileName = "Dungeon_SerdinOutside_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name3,
+        Desc = str_quest_desc2,
+        LOW_LEVEL = 4,
+        HIGH_LEVEL = 6,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 44.6903225806452,
+        RANK_DECREASE_NUM = 0.98587439957303,
+        RANK_TOTAL_SCORE = 38905.7146290396,
+        TGFileName = "Dungeon_SerdinOutside_1.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name3,
+        Desc = str_quest_desc2,
+        LOW_LEVEL = 4,
+        HIGH_LEVEL = 6,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 44.6903225806452,
+        RANK_DECREASE_NUM = 0.98587439957303,
+        RANK_TOTAL_SCORE = 38905.7146290396,
+        TGFileName = "Dungeon_SerdinOutside_1.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name3,
+        Desc = str_quest_desc2,
+        LOW_LEVEL = 7,
+        HIGH_LEVEL = 9,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 49.0096385542169,
+        RANK_DECREASE_NUM = 1.39022556390977,
+        RANK_TOTAL_SCORE = 57117.3184524351,
+        TGFileName = "Dungeon_SerdinOutside_Hell.stg"
+      }
+    }
+  },
+  QuestSign3 = {
+    ID = GC_GM_QUEST3,
+    Name = str_quest_name4,
+    Desc = str_quest_desc3,
+    LOW_LEVEL = 6,
+    HIGH_LEVEL = 8,
+    TGFileName = "Dungeon_CarryBeach_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name4,
+        Desc = str_quest_desc3,
+        LOW_LEVEL = 6,
+        HIGH_LEVEL = 8,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 48.7175675675676,
+        RANK_DECREASE_NUM = 1.24851948051948,
+        RANK_TOTAL_SCORE = 50620.3954847519,
+        TGFileName = "Dungeon_CarryBeach_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name4,
+        Desc = str_quest_desc3,
+        LOW_LEVEL = 6,
+        HIGH_LEVEL = 8,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 48.7175675675676,
+        RANK_DECREASE_NUM = 1.24851948051948,
+        RANK_TOTAL_SCORE = 50620.3954847519,
+        TGFileName = "Dungeon_CarryBeach_1.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name4,
+        Desc = str_quest_desc3,
+        LOW_LEVEL = 6,
+        HIGH_LEVEL = 8,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 48.7175675675676,
+        RANK_DECREASE_NUM = 1.24851948051948,
+        RANK_TOTAL_SCORE = 50620.3954847519,
+        TGFileName = "Dungeon_CarryBeach_1.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name4,
+        Desc = str_quest_desc3,
+        LOW_LEVEL = 9,
+        HIGH_LEVEL = 11,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 53.5642105263158,
+        RANK_DECREASE_NUM = 1.69450549450549,
+        RANK_TOTAL_SCORE = 71450.7071825216,
+        TGFileName = "Dungeon_CarryBeach_Hell.stg"
+      }
+    }
+  },
+  QuestSign4 = {
+    ID = GC_GM_QUEST4,
+    Name = str_quest_name5,
+    Desc = str_quest_desc4,
+    LOW_LEVEL = 8,
+    HIGH_LEVEL = 10,
+    TGFileName = "Dungeon_Orc'sTemple_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name5,
+        Desc = str_quest_desc4,
+        LOW_LEVEL = 8,
+        HIGH_LEVEL = 10,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 51.2584269662921,
+        RANK_DECREASE_NUM = 1.53887670770788,
+        RANK_TOTAL_SCORE = 64056.5432862995,
+        TGFileName = "Dungeon_Orc'sTemple_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name5,
+        Desc = str_quest_desc4,
+        LOW_LEVEL = 8,
+        HIGH_LEVEL = 10,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 51.2584269662921,
+        RANK_DECREASE_NUM = 1.53887670770788,
+        RANK_TOTAL_SCORE = 64056.5432862995,
+        TGFileName = "Dungeon_Orc'sTemple_1.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name5,
+        Desc = str_quest_desc4,
+        LOW_LEVEL = 8,
+        HIGH_LEVEL = 10,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 51.2584269662921,
+        RANK_DECREASE_NUM = 1.53887670770788,
+        RANK_TOTAL_SCORE = 64056.5432862995,
+        TGFileName = "Dungeon_Orc'sTemple_1.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name5,
+        Desc = str_quest_desc4,
+        LOW_LEVEL = 11,
+        HIGH_LEVEL = 13,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 56.7427272727273,
+        RANK_DECREASE_NUM = 2.02652597402597,
+        RANK_TOTAL_SCORE = 87641.763750569,
+        TGFileName = "Dungeon_Orc'sTemple_Hell.stg"
+      }
+    }
+  },
+  QuestSign5 = {
+    ID = GC_GM_QUEST5,
+    Name = str_quest_name6,
+    Desc = str_quest_desc5,
+    LOW_LEVEL = 10,
+    HIGH_LEVEL = 12,
+    TGFileName = "Dungeon_GorgosDungeon_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name6,
+        Desc = str_quest_desc5,
+        LOW_LEVEL = 10,
+        HIGH_LEVEL = 12,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 54.3096153846154,
+        RANK_DECREASE_NUM = 1.85704422160118,
+        RANK_TOTAL_SCORE = 79308.2349385526,
+        TGFileName = "Dungeon_GorgosDungeon_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name6,
+        Desc = str_quest_desc5,
+        LOW_LEVEL = 10,
+        HIGH_LEVEL = 12,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 54.3096153846154,
+        RANK_DECREASE_NUM = 1.85704422160118,
+        RANK_TOTAL_SCORE = 79308.2349385526,
+        TGFileName = "Dungeon_GorgosDungeon_1.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name6,
+        Desc = str_quest_desc5,
+        LOW_LEVEL = 10,
+        HIGH_LEVEL = 12,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 54.3096153846154,
+        RANK_DECREASE_NUM = 1.85704422160118,
+        RANK_TOTAL_SCORE = 79308.2349385526,
+        TGFileName = "Dungeon_GorgosDungeon_1.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name6,
+        Desc = str_quest_desc5,
+        LOW_LEVEL = 13,
+        HIGH_LEVEL = 15,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 66.29568,
+        RANK_DECREASE_NUM = 2.38631612290149,
+        RANK_TOTAL_SCORE = 105781.75679563,
+        TGFileName = "Dungeon_GorgosDungeon_Hell.stg"
+      }
+    }
+  },
+  QuestSign6 = {
+    ID = GC_GM_QUEST6,
+    Name = str_quest_name7,
+    Desc = str_quest_desc5,
+    LOW_LEVEL = 12,
+    HIGH_LEVEL = 14,
+    TGFileName = "Dungeon_ElvenForest_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name7,
+        Desc = str_quest_desc5,
+        LOW_LEVEL = 12,
+        HIGH_LEVEL = 14,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 65.1456034482759,
+        RANK_DECREASE_NUM = 2.20295013628347,
+        RANK_TOTAL_SCORE = 96462.5266818389,
+        TGFileName = "Dungeon_ElvenForest_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name7,
+        Desc = str_quest_desc5,
+        LOW_LEVEL = 12,
+        HIGH_LEVEL = 14,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 65.1456034482759,
+        RANK_DECREASE_NUM = 2.20295013628347,
+        RANK_TOTAL_SCORE = 96462.5266818389,
+        TGFileName = "Dungeon_ElvenForest_1.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name7,
+        Desc = str_quest_desc5,
+        LOW_LEVEL = 12,
+        HIGH_LEVEL = 14,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 65.1456034482759,
+        RANK_DECREASE_NUM = 2.20295013628347,
+        RANK_TOTAL_SCORE = 96462.5266818389,
+        TGFileName = "Dungeon_ElvenForest_1.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name7,
+        Desc = str_quest_desc5,
+        LOW_LEVEL = 15,
+        HIGH_LEVEL = 17,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 72.0275182481752,
+        RANK_DECREASE_NUM = 2.77387136672851,
+        RANK_TOTAL_SCORE = 125960.550823851,
+        TGFileName = "Dungeon_ElvenForest_Hell.stg"
+      }
+    }
+  },
+  QuestSign7 = {
+    ID = GC_GM_QUEST7,
+    Name = str_quest_name8,
+    Desc = str_quest_desc5,
+    LOW_LEVEL = 14,
+    HIGH_LEVEL = 16,
+    TGFileName = "Dungeon_OathGorge_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name8,
+        Desc = str_quest_desc5,
+        LOW_LEVEL = 14,
+        HIGH_LEVEL = 16,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 69.1370992366412,
+        RANK_DECREASE_NUM = 2.57662337662338,
+        RANK_TOTAL_SCORE = 115610.687155212,
+        TGFileName = "Dungeon_OathGorge_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name8,
+        Desc = str_quest_desc5,
+        LOW_LEVEL = 14,
+        HIGH_LEVEL = 16,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 69.1370992366412,
+        RANK_DECREASE_NUM = 2.57662337662338,
+        RANK_TOTAL_SCORE = 115610.687155212,
+        TGFileName = "Dungeon_OathGorge_1.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name8,
+        Desc = str_quest_desc5,
+        LOW_LEVEL = 14,
+        HIGH_LEVEL = 16,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 69.1370992366412,
+        RANK_DECREASE_NUM = 2.57662337662338,
+        RANK_TOTAL_SCORE = 115610.687155212,
+        TGFileName = "Dungeon_OathGorge_1.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name8,
+        Desc = str_quest_desc5,
+        LOW_LEVEL = 17,
+        HIGH_LEVEL = 19,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 76.4167105263158,
+        RANK_DECREASE_NUM = 3.18918755662942,
+        RANK_TOTAL_SCORE = 148268.010341375,
+        TGFileName = "Dungeon_OathGorge_Hell.stg"
+      }
+    }
+  },
+  QuestSign8 = {
+    ID = GC_GM_QUEST8,
+    Name = str_quest_name9,
+    Desc = str_quest_desc5,
+    LOW_LEVEL = 16,
+    HIGH_LEVEL = 18,
+    TGFileName = "Dungeon_ObilivionSwamp_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name9,
+        Desc = str_quest_desc5,
+        LOW_LEVEL = 16,
+        HIGH_LEVEL = 18,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 73.4265068493151,
+        RANK_DECREASE_NUM = 2.97805958747135,
+        RANK_TOTAL_SCORE = 136842.580864816,
+        TGFileName = "Dungeon_ObilivionSwamp_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name9,
+        Desc = str_quest_desc5,
+        LOW_LEVEL = 16,
+        HIGH_LEVEL = 18,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 73.4265068493151,
+        RANK_DECREASE_NUM = 2.97805958747135,
+        RANK_TOTAL_SCORE = 136842.580864816,
+        TGFileName = "Dungeon_ObilivionSwamp_1.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name9,
+        Desc = str_quest_desc5,
+        LOW_LEVEL = 16,
+        HIGH_LEVEL = 18,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 73.4265068493151,
+        RANK_DECREASE_NUM = 2.97805958747135,
+        RANK_TOTAL_SCORE = 136842.580864816,
+        TGFileName = "Dungeon_ObilivionSwamp_1.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name9,
+        Desc = str_quest_desc5,
+        LOW_LEVEL = 19,
+        HIGH_LEVEL = 21,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 81.0581437125748,
+        RANK_DECREASE_NUM = 3.63226092089728,
+        RANK_TOTAL_SCORE = 172793.999854347,
+        TGFileName = "Dungeon_ObilivionSwamp_Hell.stg"
+      }
+    }
+  },
+  QuestSign9 = {
+    ID = GC_GM_QUEST9,
+    Name = str_quest_name10,
+    Desc = str_quest_desc5,
+    LOW_LEVEL = 18,
+    HIGH_LEVEL = 20,
+    TGFileName = "Dungeon_Dead'sTomb_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name10,
+        Desc = str_quest_desc5,
+        LOW_LEVEL = 18,
+        HIGH_LEVEL = 20,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 79.4548101265823,
+        RANK_DECREASE_NUM = 3.40725481415137,
+        RANK_TOTAL_SCORE = 160248.072316796,
+        TGFileName = "Dungeon_Dead'sTomb_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name10,
+        Desc = str_quest_desc5,
+        LOW_LEVEL = 18,
+        HIGH_LEVEL = 20,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 79.4548101265823,
+        RANK_DECREASE_NUM = 3.40725481415137,
+        RANK_TOTAL_SCORE = 160248.072316796,
+        TGFileName = "Dungeon_Dead'sTomb_1.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name10,
+        Desc = str_quest_desc5,
+        LOW_LEVEL = 18,
+        HIGH_LEVEL = 20,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 79.4548101265823,
+        RANK_DECREASE_NUM = 3.40725481415137,
+        RANK_TOTAL_SCORE = 160248.072316796,
+        TGFileName = "Dungeon_Dead'sTomb_1.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name10,
+        Desc = str_quest_desc5,
+        LOW_LEVEL = 21,
+        HIGH_LEVEL = 23,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 87.3688826815643,
+        RANK_DECREASE_NUM = 4.10311688311688,
+        RANK_TOTAL_SCORE = 199629.788001821,
+        TGFileName = "Dungeon_Dead'sTomb_Hell.stg"
+      }
+    }
+  },
+  QuestSign10 = {
+    ID = GC_GM_QUEST10,
+    Name = str_quest_name11,
+    Desc = str_quest_desc5,
+    LOW_LEVEL = 20,
+    HIGH_LEVEL = 22,
+    TGFileName = "Dungeon_ForgattenCity_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name11,
+        Desc = str_quest_desc5,
+        LOW_LEVEL = 20,
+        HIGH_LEVEL = 22,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 84.1900578034682,
+        RANK_DECREASE_NUM = 3.86423464176273,
+        RANK_TOTAL_SCORE = 185918.430150205,
+        TGFileName = "Dungeon_ForgattenCity_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name11,
+        Desc = str_quest_desc5,
+        LOW_LEVEL = 20,
+        HIGH_LEVEL = 22,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 84.1900578034682,
+        RANK_DECREASE_NUM = 3.86423464176273,
+        RANK_TOTAL_SCORE = 185918.430150205,
+        TGFileName = "Dungeon_ForgattenCity_1.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name11,
+        Desc = str_quest_desc5,
+        LOW_LEVEL = 20,
+        HIGH_LEVEL = 22,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 84.1900578034682,
+        RANK_DECREASE_NUM = 3.86423464176273,
+        RANK_TOTAL_SCORE = 185918.430150205,
+        TGFileName = "Dungeon_ForgattenCity_1.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name11,
+        Desc = str_quest_desc5,
+        LOW_LEVEL = 23,
+        HIGH_LEVEL = 25,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 92.3631443298969,
+        RANK_DECREASE_NUM = 4.59895539243365,
+        RANK_TOTAL_SCORE = 228726.230131998,
+        TGFileName = "Dungeon_ForgattenCity_Hell.stg"
+      }
+    }
+  },
+  QuestSign11 = {
+    ID = GC_GM_QUEST11,
+    Name = str_quest_name12,
+    Desc = str_quest_desc6,
+    LOW_LEVEL = 22,
+    HIGH_LEVEL = 24,
+    TGFileName = "Dungeon_Gaikoz'sCastle_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name12,
+        Desc = str_quest_desc6,
+        LOW_LEVEL = 22,
+        HIGH_LEVEL = 24,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 89.1497340425532,
+        RANK_DECREASE_NUM = 4.34893677750821,
+        RANK_TOTAL_SCORE = 213940.710605371,
+        TGFileName = "Dungeon_Gaikoz'sCastle_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name12,
+        Desc = str_quest_desc6,
+        LOW_LEVEL = 22,
+        HIGH_LEVEL = 24,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 89.1497340425532,
+        RANK_DECREASE_NUM = 4.34893677750821,
+        RANK_TOTAL_SCORE = 213940.710605371,
+        TGFileName = "Dungeon_Gaikoz'sCastle_1.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name12,
+        Desc = str_quest_desc6,
+        LOW_LEVEL = 22,
+        HIGH_LEVEL = 24,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 89.1497340425532,
+        RANK_DECREASE_NUM = 4.34893677750821,
+        RANK_TOTAL_SCORE = 213940.710605371,
+        TGFileName = "Dungeon_Gaikoz'sCastle_1.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name12,
+        Desc = str_quest_desc6,
+        LOW_LEVEL = 25,
+        HIGH_LEVEL = 27,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 89.1497340425532,
+        RANK_DECREASE_NUM = 4.34893677750821,
+        RANK_TOTAL_SCORE = 290016.105038689,
+        TGFileName = "Dungeon_Gaikoz'sCastle_Hell.stg"
+      }
+    }
+  },
+  QuestSign12 = {
+    ID = 11,
+    Name = str_quest_name13,
+    Desc = str_quest_desc7,
+    LOW_LEVEL = 0,
+    HIGH_LEVEL = 0,
+    TGFileName = "Dungeon_Gaikoz'sCastle_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 2,
+        RANK_DECREASE_NUM = 3,
+        RANK_TOTAL_SCORE = 80000,
+        TGFileName = "Dungeon_Gaikoz'sCastle.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 2,
+        RANK_DECREASE_NUM = 3,
+        RANK_TOTAL_SCORE = 80000,
+        TGFileName = "Dungeon_Gaikoz'sCastle.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 2,
+        RANK_DECREASE_NUM = 3,
+        RANK_TOTAL_SCORE = 80000,
+        TGFileName = "Dungeon_Gaikoz'sCastle.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 2,
+        RANK_DECREASE_NUM = 3,
+        RANK_TOTAL_SCORE = 80000,
+        TGFileName = "Dungeon_Gaikoz'sCastle.stg"
+      }
+    }
+  },
+  QuestSign13 = {
+    ID = GC_GM_QUEST12,
+    Name = str_quest_name14,
+    Desc = str_quest_desc8,
+    LOW_LEVEL = 38,
+    HIGH_LEVEL = 40,
+    TGFileName = "Dungeon_Patusei'sSea_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name14,
+        Desc = str_quest_desc8,
+        LOW_LEVEL = 38,
+        HIGH_LEVEL = 40,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 76.8283575652172,
+        RANK_DECREASE_NUM = 6.63848447627139,
+        RANK_TOTAL_SCORE = 671985.215085443,
+        TGFileName = "Dungeon_Patusei'sSea_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name14,
+        Desc = str_quest_desc8,
+        LOW_LEVEL = 39,
+        HIGH_LEVEL = 41,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 78.1422024393441,
+        RANK_DECREASE_NUM = 6.82372813852814,
+        RANK_TOTAL_SCORE = 697192.116386271,
+        TGFileName = "Dungeon_Patusei'sSea_2.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name14,
+        Desc = str_quest_desc8,
+        LOW_LEVEL = 40,
+        HIGH_LEVEL = 42,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 78.6850963566877,
+        RANK_DECREASE_NUM = 7.00899282735613,
+        RANK_TOTAL_SCORE = 722751.679708401,
+        TGFileName = "Dungeon_Patusei'sSea_3.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name14,
+        Desc = str_quest_desc8,
+        LOW_LEVEL = 41,
+        HIGH_LEVEL = 43,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 79.9778888999999,
+        RANK_DECREASE_NUM = 7.19427796930343,
+        RANK_TOTAL_SCORE = 748663.905051833,
+        TGFileName = "Dungeon_Patusei'sSea_Hell.stg"
+      }
+    }
+  },
+  QuestSign14 = {
+    ID = GC_GM_QUEST13,
+    Name = str_quest_name15,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 40,
+    HIGH_LEVEL = 42,
+    TGFileName = "Dungeon_Elia_Continent_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name15,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 40,
+        HIGH_LEVEL = 42,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 78.6850963566877,
+        RANK_DECREASE_NUM = 7.00899282735613,
+        RANK_TOTAL_SCORE = 722751.679708401,
+        TGFileName = "Dungeon_Elia_Continent_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name15,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 41,
+        HIGH_LEVEL = 43,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 79.9778888999999,
+        RANK_DECREASE_NUM = 7.19427796930343,
+        RANK_TOTAL_SCORE = 748663.905051833,
+        TGFileName = "Dungeon_Elia_Continent_2.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name15,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 42,
+        HIGH_LEVEL = 44,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 81.2600746012268,
+        RANK_DECREASE_NUM = 7.37958301158301,
+        RANK_TOTAL_SCORE = 774928.792416567,
+        TGFileName = "Dungeon_Elia_Continent_3.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name15,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 43,
+        HIGH_LEVEL = 45,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 81.7931339462685,
+        RANK_DECREASE_NUM = 7.56490742115028,
+        RANK_TOTAL_SCORE = 801546.341802602,
+        TGFileName = "Dungeon_Elia_Continent_Hell.stg"
+      }
+    }
+  },
+  QuestSign15 = {
+    ID = GC_GM_QUEST14,
+    Name = str_quest_name16,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 42,
+    HIGH_LEVEL = 44,
+    TGFileName = "Dungeon_TempleOfFire1_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 42,
+        HIGH_LEVEL = 44,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 81.2600746012268,
+        RANK_DECREASE_NUM = 7.37958301158301,
+        RANK_TOTAL_SCORE = 774928.792416567,
+        TGFileName = "Dungeon_TempleOfFire_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 43,
+        HIGH_LEVEL = 45,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 81.7931339462685,
+        RANK_DECREASE_NUM = 7.56490742115028,
+        RANK_TOTAL_SCORE = 801546.341802602,
+        TGFileName = "Dungeon_TempleOfFire_2.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 44,
+        HIGH_LEVEL = 46,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 83.057686521994,
+        RANK_DECREASE_NUM = 7.75025068382945,
+        RANK_TOTAL_SCORE = 828516.55320994,
+        TGFileName = "Dungeon_TempleOfFire_3.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 45,
+        HIGH_LEVEL = 47,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 84.3132507665704,
+        RANK_DECREASE_NUM = 7.93561230348599,
+        RANK_TOTAL_SCORE = 855839.426638578,
+        TGFileName = "Dungeon_TempleOfFire_Hell.stg"
+      }
+    }
+  },
+  QuestSign16 = {
+    ID = GC_GM_QUEST15,
+    Name = str_quest_name17,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 44,
+    HIGH_LEVEL = 46,
+    TGFileName = "Dungeon_HellBridge_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name17,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 44,
+        HIGH_LEVEL = 46,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 83.057686521994,
+        RANK_DECREASE_NUM = 7.75025068382945,
+        RANK_TOTAL_SCORE = 828516.55320994,
+        TGFileName = "Dungeon_HellBridge_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name17,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 45,
+        HIGH_LEVEL = 47,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 84.3132507665704,
+        RANK_DECREASE_NUM = 7.93561230348599,
+        RANK_TOTAL_SCORE = 855839.426638578,
+        TGFileName = "Dungeon_HellBridge_2.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name17,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 46,
+        HIGH_LEVEL = 48,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 84.8392713707864,
+        RANK_DECREASE_NUM = 8.12099180124224,
+        RANK_TOTAL_SCORE = 883514.962088519,
+        TGFileName = "Dungeon_HellBridge_3.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name17,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 47,
+        HIGH_LEVEL = 49,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 86.0798864088396,
+        RANK_DECREASE_NUM = 8.30638871473354,
+        RANK_TOTAL_SCORE = 911543.159559762,
+        TGFileName = "Dungeon_HellBridge_Hell.stg"
+      }
+    }
+  },
+  QuestSign17 = {
+    ID = GC_GM_QUEST16,
+    Name = str_quest_name18,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 46,
+    HIGH_LEVEL = 48,
+    TGFileName = "Dungeon_Kazeaze'sCastle_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name18,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 46,
+        HIGH_LEVEL = 48,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 84.8392713707864,
+        RANK_DECREASE_NUM = 8.12099180124224,
+        RANK_TOTAL_SCORE = 883514.962088519,
+        TGFileName = "Dungeon_Kazeaze'sCastle_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name18,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 47,
+        HIGH_LEVEL = 49,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 86.0798864088396,
+        RANK_DECREASE_NUM = 8.30638871473354,
+        RANK_TOTAL_SCORE = 911543.159559762,
+        TGFileName = "Dungeon_Kazeaze'sCastle_2.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name18,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 48,
+        HIGH_LEVEL = 50,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 87.3128066086955,
+        RANK_DECREASE_NUM = 8.4918025974026,
+        RANK_TOTAL_SCORE = 939924.019052306,
+        TGFileName = "Dungeon_Kazeaze'sCastle_3.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name18,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 49,
+        HIGH_LEVEL = 51,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 87.833852689655,
+        RANK_DECREASE_NUM = 8.67723301782963,
+        RANK_TOTAL_SCORE = 968657.540566152,
+        TGFileName = "Dungeon_Kazeaze'sCastle_Hell.stg"
+      }
+    }
+  },
+  QuestSign18 = {
+    ID = GC_GM_QUEST17,
+    Name = str_quest_name19,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 48,
+    HIGH_LEVEL = 50,
+    TGFileName = "Dungeon_CastulUnderFloor_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name19,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 48,
+        HIGH_LEVEL = 50,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 87.3128066086955,
+        RANK_DECREASE_NUM = 8.4918025974026,
+        RANK_TOTAL_SCORE = 939924.019052306,
+        TGFileName = "Dungeon_CastulUnderFloor_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name19,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 49,
+        HIGH_LEVEL = 51,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 87.833852689655,
+        RANK_DECREASE_NUM = 8.67723301782963,
+        RANK_TOTAL_SCORE = 968657.540566152,
+        TGFileName = "Dungeon_CastulUnderFloor_2.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name19,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 50,
+        HIGH_LEVEL = 52,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 89.0539628616186,
+        RANK_DECREASE_NUM = 8.86267955909637,
+        RANK_TOTAL_SCORE = 997743.7241013,
+        TGFileName = "Dungeon_CastulUnderFloor_3.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name19,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 51,
+        HIGH_LEVEL = 53,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 90.2674261388173,
+        RANK_DECREASE_NUM = 9.04814181818182,
+        RANK_TOTAL_SCORE = 1027182.56965775,
+        TGFileName = "Dungeon_CastulUnderFloor_Hell.stg"
+      }
+    }
+  },
+  QuestSign19 = {
+    ID = GC_GM_QUEST18,
+    Name = str_quest_name20,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 50,
+    HIGH_LEVEL = 52,
+    TGFileName = "Dungeon_CastulOverFloor_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name20,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 50,
+        HIGH_LEVEL = 52,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 89.0539628616186,
+        RANK_DECREASE_NUM = 8.86267955909637,
+        RANK_TOTAL_SCORE = 997743.7241013,
+        TGFileName = "Dungeon_CastulOverFloor_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name20,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 51,
+        HIGH_LEVEL = 53,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 90.2674261388173,
+        RANK_DECREASE_NUM = 9.04814181818182,
+        RANK_TOTAL_SCORE = 1027182.56965775,
+        TGFileName = "Dungeon_CastulOverFloor_2.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name20,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 52,
+        HIGH_LEVEL = 54,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 90.7850387939697,
+        RANK_DECREASE_NUM = 9.233619405388,
+        RANK_TOTAL_SCORE = 1056974.0772355,
+        TGFileName = "Dungeon_CastulOverFloor_3.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name20,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 53,
+        HIGH_LEVEL = 55,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 91.9874202772276,
+        RANK_DECREASE_NUM = 9.41911194379391,
+        RANK_TOTAL_SCORE = 1087118.24683455,
+        TGFileName = "Dungeon_CastulOverFloor_Hell.stg"
+      }
+    }
+  },
+  QuestSign20 = {
+    ID = GC_GM_QUEST19,
+    Name = str_quest_name21,
+    Desc = str_quest_name11,
+    LOW_LEVEL = 52,
+    HIGH_LEVEL = 54,
+    TGFileName = "Dungeon_Mesia's_Final_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name21,
+        Desc = str_quest_name11,
+        LOW_LEVEL = 52,
+        HIGH_LEVEL = 54,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 90.7850387939697,
+        RANK_DECREASE_NUM = 9.233619405388,
+        RANK_TOTAL_SCORE = 1056974.0772355,
+        TGFileName = "Dungeon_Mesia's_Final_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name21,
+        Desc = str_quest_name11,
+        LOW_LEVEL = 53,
+        HIGH_LEVEL = 55,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 91.9874202772276,
+        RANK_DECREASE_NUM = 9.41911194379391,
+        RANK_TOTAL_SCORE = 1087118.24683455,
+        TGFileName = "Dungeon_Mesia's_Final_2.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name21,
+        Desc = str_quest_name11,
+        LOW_LEVEL = 54,
+        HIGH_LEVEL = 56,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 88.7466801951218,
+        RANK_DECREASE_NUM = 11.2053889135255,
+        RANK_TOTAL_SCORE = 1037785.42999384,
+        TGFileName = "Dungeon_Mesia's_Final_3.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name21,
+        Desc = str_quest_name11,
+        LOW_LEVEL = 55,
+        HIGH_LEVEL = 57,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 89.2374804773268,
+        RANK_DECREASE_NUM = 11.4218304985337,
+        RANK_TOTAL_SCORE = 1066431.38837538,
+        TGFileName = "Dungeon_Mesia's_Final_Hell.stg"
+      }
+    }
+  },
+  QuestSign21 = {
+    ID = GC_GM_QUEST20,
+    Name = str_quest_name22,
+    Desc = str_quest_name11,
+    LOW_LEVEL = 54,
+    HIGH_LEVEL = 56,
+    TGFileName = "Dungeon_New_World_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name22,
+        Desc = str_quest_name11,
+        LOW_LEVEL = 54,
+        HIGH_LEVEL = 56,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 88.7466801951218,
+        RANK_DECREASE_NUM = 11.2053889135255,
+        RANK_TOTAL_SCORE = 1037785.42999384,
+        TGFileName = "Dungeon_New_World_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name22,
+        Desc = str_quest_name11,
+        LOW_LEVEL = 55,
+        HIGH_LEVEL = 57,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 89.2374804773268,
+        RANK_DECREASE_NUM = 11.4218304985337,
+        RANK_TOTAL_SCORE = 1066431.38837538,
+        TGFileName = "Dungeon_New_World_2.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name22,
+        Desc = str_quest_name11,
+        LOW_LEVEL = 56,
+        HIGH_LEVEL = 58,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 90.367885552941,
+        RANK_DECREASE_NUM = 11.6382882909091,
+        RANK_TOTAL_SCORE = 1095404.81863384,
+        TGFileName = "Dungeon_New_World_3.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name22,
+        Desc = str_quest_name11,
+        LOW_LEVEL = 57,
+        HIGH_LEVEL = 59,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 91.493457076566,
+        RANK_DECREASE_NUM = 11.8547619047619,
+        RANK_TOTAL_SCORE = 1124705.72076923,
+        TGFileName = "Dungeon_New_World_Hell.stg"
+      }
+    }
+  },
+  QuestSign22 = {
+    ID = GC_GM_QUEST21,
+    Name = str_quest_name22,
+    Desc = str_quest_name11,
+    LOW_LEVEL = 56,
+    HIGH_LEVEL = 58,
+    TGFileName = "Temple_of_Circulation_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name22,
+        Desc = str_quest_name11,
+        LOW_LEVEL = 56,
+        HIGH_LEVEL = 58,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 90.367885552941,
+        RANK_DECREASE_NUM = 11.6382882909091,
+        RANK_TOTAL_SCORE = 1095404.81863384,
+        TGFileName = "Temple_of_Circulation_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name22,
+        Desc = str_quest_name11,
+        LOW_LEVEL = 57,
+        HIGH_LEVEL = 59,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 91.493457076566,
+        RANK_DECREASE_NUM = 11.8547619047619,
+        RANK_TOTAL_SCORE = 1124705.72076923,
+        TGFileName = "Temple_of_Circulation_2.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name22,
+        Desc = str_quest_name11,
+        LOW_LEVEL = 58,
+        HIGH_LEVEL = 60,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 91.9829323636362,
+        RANK_DECREASE_NUM = 12.0712509663565,
+        RANK_TOTAL_SCORE = 1154334.09478154,
+        TGFileName = "Temple_of_Circulation_3.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name22,
+        Desc = str_quest_name11,
+        LOW_LEVEL = 59,
+        HIGH_LEVEL = 61,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 93.1004082511209,
+        RANK_DECREASE_NUM = 12.2877551136364,
+        RANK_TOTAL_SCORE = 1184289.94067077,
+        TGFileName = "Temple_of_Circulation_Hell.stg"
+      }
+    }
+  },
+  QuestSign23 = {
+    ID = GC_GM_QUEST22,
+    Name = str_quest_name1,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 58,
+    HIGH_LEVEL = 60,
+    TGFileName = "Dungeon_NightGorge_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name1,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 58,
+        HIGH_LEVEL = 60,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 91.9829323636362,
+        RANK_DECREASE_NUM = 12.0712509663565,
+        RANK_TOTAL_SCORE = 1154334.09478154,
+        TGFileName = "Dungeon_NightGorge_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name1,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 59,
+        HIGH_LEVEL = 61,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 93.1004082511209,
+        RANK_DECREASE_NUM = 12.2877551136364,
+        RANK_TOTAL_SCORE = 1184289.94067077,
+        TGFileName = "Dungeon_NightGorge_2.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name1,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 60,
+        HIGH_LEVEL = 62,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 94.2136184070795,
+        RANK_DECREASE_NUM = 12.5042739957717,
+        RANK_TOTAL_SCORE = 1214573.25843692,
+        TGFileName = "Dungeon_NightGorge_3.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name1,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 61,
+        HIGH_LEVEL = 63,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 94.7024090238611,
+        RANK_DECREASE_NUM = 12.7208072727273,
+        RANK_TOTAL_SCORE = 1245184.04808,
+        TGFileName = "Dungeon_NightGorge_Hell.stg"
+      }
+    }
+  },
+  QuestSign24 = {
+    ID = GC_GM_QUEST23,
+    Name = str_quest_name1,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 24,
+    HIGH_LEVEL = 26,
+    TGFileName = "Dungeon_AngryForest_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name1,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 24,
+        HIGH_LEVEL = 26,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 40.06728,
+        RANK_DECREASE_NUM = 3.10844854070661,
+        RANK_TOTAL_SCORE = 273485.072790168,
+        TGFileName = "Dungeon_AngryForest_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name1,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 25,
+        HIGH_LEVEL = 27,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 40.6595023923445,
+        RANK_DECREASE_NUM = 3.26127383255043,
+        RANK_TOTAL_SCORE = 290016.105038689,
+        TGFileName = "Dungeon_AngryForest_2.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name1,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 25,
+        HIGH_LEVEL = 27,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 40.6595023923445,
+        RANK_DECREASE_NUM = 3.26127383255043,
+        RANK_TOTAL_SCORE = 290016.105038689,
+        TGFileName = "Dungeon_AngryForest_2.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name1,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 27,
+        HIGH_LEVEL = 29,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 43.0734298642534,
+        RANK_DECREASE_NUM = 3.57715097402597,
+        RANK_TOTAL_SCORE = 324874.406558944,
+        TGFileName = "Dungeon_AngryForest_4.stg"
+      }
+    }
+  },
+  QuestSign25 = {
+    ID = GC_GM_QUEST24,
+    Name = str_quest_name1,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 26,
+    HIGH_LEVEL = 28,
+    TGFileName = "Dungeon_SilverKnights_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name1,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 26,
+        HIGH_LEVEL = 28,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 41.8589581395349,
+        RANK_DECREASE_NUM = 3.41751196172249,
+        RANK_TOTAL_SCORE = 307143.016190259,
+        TGFileName = "Dungeon_SilverKnights_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name1,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 27,
+        HIGH_LEVEL = 29,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 43.0734298642534,
+        RANK_DECREASE_NUM = 3.57715097402597,
+        RANK_TOTAL_SCORE = 324874.406558944,
+        TGFileName = "Dungeon_SilverKnights_2.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name1,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 27,
+        HIGH_LEVEL = 29,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 43.0734298642534,
+        RANK_DECREASE_NUM = 3.57715097402597,
+        RANK_TOTAL_SCORE = 324874.406558944,
+        TGFileName = "Dungeon_SilverKnights_2.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name1,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 29,
+        HIGH_LEVEL = 31,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 44.9687288135593,
+        RANK_DECREASE_NUM = 3.90663927908826,
+        RANK_TOTAL_SCORE = 362189.940669094,
+        TGFileName = "Dungeon_SilverKnights_Hell.stg"
+      }
+    }
+  },
+  QuestSign26 = {
+    ID = GC_GM_QUEST25,
+    Name = str_quest_name14,
+    Desc = str_quest_desc8,
+    LOW_LEVEL = 28,
+    HIGH_LEVEL = 30,
+    TGFileName = "dungeon_LakeDawn_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name14,
+        Desc = str_quest_desc8,
+        LOW_LEVEL = 28,
+        HIGH_LEVEL = 30,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 43.7251304347826,
+        RANK_DECREASE_NUM = 3.74019279689383,
+        RANK_TOTAL_SCORE = 343220.105075102,
+        TGFileName = "dungeon_LakeDawn_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name14,
+        Desc = str_quest_desc8,
+        LOW_LEVEL = 29,
+        HIGH_LEVEL = 31,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 44.9687288135593,
+        RANK_DECREASE_NUM = 3.90663927908826,
+        RANK_TOTAL_SCORE = 362189.940669094,
+        TGFileName = "dungeon_LakeDawn_2.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name14,
+        Desc = str_quest_desc8,
+        LOW_LEVEL = 29,
+        HIGH_LEVEL = 31,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 44.9687288135593,
+        RANK_DECREASE_NUM = 3.90663927908826,
+        RANK_TOTAL_SCORE = 362189.940669094,
+        TGFileName = "dungeon_LakeDawn_2.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name14,
+        Desc = str_quest_desc8,
+        LOW_LEVEL = 31,
+        HIGH_LEVEL = 33,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 46.9336733067729,
+        RANK_DECREASE_NUM = 4.24976623376624,
+        RANK_TOTAL_SCORE = 402042.567428311,
+        TGFileName = "dungeon_LakeDawn_4.stg"
+      }
+    }
+  },
+  QuestSign27 = {
+    ID = GC_GM_QUEST26,
+    Name = str_quest_name16,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 60,
+    HIGH_LEVEL = 62,
+    TGFileName = "Dungeon_Fire1_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 60,
+        HIGH_LEVEL = 62,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 94.2136184070795,
+        RANK_DECREASE_NUM = 12.5042739957717,
+        RANK_TOTAL_SCORE = 1214573.25843692,
+        TGFileName = "Dungeon_Fire_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 61,
+        HIGH_LEVEL = 63,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 94.7024090238611,
+        RANK_DECREASE_NUM = 12.7208072727273,
+        RANK_TOTAL_SCORE = 1245184.04808,
+        TGFileName = "Dungeon_Fire_2.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 62,
+        HIGH_LEVEL = 64,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 95.8084522483939,
+        RANK_DECREASE_NUM = 12.9373546148508,
+        RANK_TOTAL_SCORE = 1276122.3096,
+        TGFileName = "Dungeon_Fire_3.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 63,
+        HIGH_LEVEL = 65,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 96.9107091754755,
+        RANK_DECREASE_NUM = 13.1539157024793,
+        RANK_TOTAL_SCORE = 1307388.04299692,
+        TGFileName = "Dungeon_Fire_Hell.stg"
+      }
+    }
+  },
+  QuestSign28 = {
+    ID = GC_GM_QUEST27,
+    Name = str_quest_name16,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 30,
+    HIGH_LEVEL = 32,
+    TGFileName = "dungeon_FairyDragon_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 30,
+        HIGH_LEVEL = 32,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 46.2275702479339,
+        RANK_DECREASE_NUM = 4.07650531286896,
+        RANK_TOTAL_SCORE = 381794.970887574,
+        TGFileName = "dungeon_FairyDragon_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 31,
+        HIGH_LEVEL = 33,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 46.9336733067729,
+        RANK_DECREASE_NUM = 4.24976623376624,
+        RANK_TOTAL_SCORE = 402042.567428311,
+        TGFileName = "dungeon_FairyDragon_2.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 31,
+        HIGH_LEVEL = 33,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 46.9336733067729,
+        RANK_DECREASE_NUM = 4.24976623376624,
+        RANK_TOTAL_SCORE = 402042.567428311,
+        TGFileName = "dungeon_FairyDragon_2.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 33,
+        HIGH_LEVEL = 35,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 49.5234068441065,
+        RANK_DECREASE_NUM = 4.60651897122486,
+        RANK_TOTAL_SCORE = 444508.461046882,
+        TGFileName = "dungeon_FairyDragon_4.stg"
+      }
+    }
+  },
+  QuestSign29 = {
+    ID = GC_GM_QUEST28,
+    Name = str_quest_name16,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 32,
+    HIGH_LEVEL = 34,
+    TGFileName = "dungeon_IslandOfNature_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 32,
+        HIGH_LEVEL = 34,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 48.2209494163424,
+        RANK_DECREASE_NUM = 4.42643692940724,
+        RANK_TOTAL_SCORE = 422943.787837961,
+        TGFileName = "dungeon_IslandOfNature_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 33,
+        HIGH_LEVEL = 35,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 49.5234068441065,
+        RANK_DECREASE_NUM = 4.60651897122486,
+        RANK_TOTAL_SCORE = 444508.461046882,
+        TGFileName = "dungeon_IslandOfNature_2.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 33,
+        HIGH_LEVEL = 35,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 49.5234068441065,
+        RANK_DECREASE_NUM = 4.60651897122486,
+        RANK_TOTAL_SCORE = 444508.461046882,
+        TGFileName = "dungeon_IslandOfNature_2.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 35,
+        HIGH_LEVEL = 37,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 51.6106618705036,
+        RANK_DECREASE_NUM = 4.97688561438562,
+        RANK_TOTAL_SCORE = 489663.795735093,
+        TGFileName = "dungeon_IslandOfNature_4.stg"
+      }
+    }
+  },
+  QuestSign30 = {
+    ID = GC_GM_QUEST29,
+    Name = str_quest_name16,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 34,
+    HIGH_LEVEL = 36,
+    TGFileName = "dungeon_LavaContinent_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 34,
+        HIGH_LEVEL = 36,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 50.2802205882353,
+        RANK_DECREASE_NUM = 4.79000126087506,
+        RANK_TOTAL_SCORE = 466745.18736914,
+        TGFileName = "dungeon_LavaContinent_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 35,
+        HIGH_LEVEL = 37,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 51.6106618705036,
+        RANK_DECREASE_NUM = 4.97688561438562,
+        RANK_TOTAL_SCORE = 489663.795735093,
+        TGFileName = "dungeon_LavaContinent_2.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 35,
+        HIGH_LEVEL = 37,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 51.6106618705036,
+        RANK_DECREASE_NUM = 4.97688561438562,
+        RANK_TOTAL_SCORE = 489663.795735093,
+        TGFileName = "dungeon_LavaContinent_2.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 37,
+        HIGH_LEVEL = 39,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 53.7611467576792,
+        RANK_DECREASE_NUM = 5.36089193825044,
+        RANK_TOTAL_SCORE = 537588.431552116,
+        TGFileName = "dungeon_LavaContinent_4.stg"
+      }
+    }
+  },
+  QuestSign31 = {
+    ID = GC_GM_QUEST30,
+    Name = str_quest_name16,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 36,
+    HIGH_LEVEL = 38,
+    TGFileName = "dungeon_VictorFortress_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 36,
+        HIGH_LEVEL = 38,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 52.9563802816901,
+        RANK_DECREASE_NUM = 5.16718614718616,
+        RANK_TOTAL_SCORE = 513275.343691397,
+        TGFileName = "dungeon_VictorFortress_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 37,
+        HIGH_LEVEL = 39,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 53.7611467576792,
+        RANK_DECREASE_NUM = 5.36089193825044,
+        RANK_TOTAL_SCORE = 537588.431552116,
+        TGFileName = "dungeon_VictorFortress_2.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 37,
+        HIGH_LEVEL = 39,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 53.7611467576792,
+        RANK_DECREASE_NUM = 5.36089193825044,
+        RANK_TOTAL_SCORE = 537588.431552116,
+        TGFileName = "dungeon_VictorFortress_2.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 39,
+        HIGH_LEVEL = 41,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 78.1422024393441,
+        RANK_DECREASE_NUM = 6.82372813852814,
+        RANK_TOTAL_SCORE = 697192.116386271,
+        TGFileName = "dungeon_VictorFortress_4.stg"
+      }
+    }
+  },
+  QuestSign32 = {
+    ID = GC_GM_QUEST31,
+    Name = str_quest_name16,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 62,
+    HIGH_LEVEL = 64,
+    TGFileName = "dungeon_AltarOfHarmony_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 62,
+        HIGH_LEVEL = 64,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 95.8084522483939,
+        RANK_DECREASE_NUM = 12.9373546148508,
+        RANK_TOTAL_SCORE = 1276122.3096,
+        TGFileName = "dungeon_AltarOfHarmony_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 63,
+        HIGH_LEVEL = 65,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 96.9107091754755,
+        RANK_DECREASE_NUM = 13.1539157024793,
+        RANK_TOTAL_SCORE = 1307388.04299692,
+        TGFileName = "dungeon_AltarOfHarmony_2.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 64,
+        HIGH_LEVEL = 66,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 97.3993055601658,
+        RANK_DECREASE_NUM = 13.3704902255639,
+        RANK_TOTAL_SCORE = 1338981.24827077,
+        TGFileName = "dungeon_AltarOfHarmony_3.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 65,
+        HIGH_LEVEL = 67,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 98.4951777049179,
+        RANK_DECREASE_NUM = 13.5870778833107,
+        RANK_TOTAL_SCORE = 1370901.92542154,
+        TGFileName = "dungeon_AltarOfHarmony_4.stg"
+      }
+    }
+  },
+  QuestSign33 = {
+    ID = GC_GM_QUEST32,
+    Name = str_quest_name16,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 64,
+    HIGH_LEVEL = 66,
+    TGFileName = "dungeon_GiantRock_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 64,
+        HIGH_LEVEL = 66,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 97.3993055601658,
+        RANK_DECREASE_NUM = 13.3704902255639,
+        RANK_TOTAL_SCORE = 1338981.24827077,
+        TGFileName = "dungeon_GiantRock_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 65,
+        HIGH_LEVEL = 67,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 98.4951777049179,
+        RANK_DECREASE_NUM = 13.5870778833107,
+        RANK_TOTAL_SCORE = 1370901.92542154,
+        TGFileName = "dungeon_GiantRock_2.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 66,
+        HIGH_LEVEL = 68,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 99.5876715789472,
+        RANK_DECREASE_NUM = 13.8036783838384,
+        RANK_TOTAL_SCORE = 1403150.07444923,
+        TGFileName = "dungeon_GiantRock_3.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 67,
+        HIGH_LEVEL = 69,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 100.076450099403,
+        RANK_DECREASE_NUM = 14.0202914438503,
+        RANK_TOTAL_SCORE = 1435725.69535384,
+        TGFileName = "dungeon_GiantRock_4.stg"
+      }
+    }
+  },
+  QuestSign34 = {
+    ID = GC_GM_QUEST33,
+    Name = str_quest_name16,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 66,
+    HIGH_LEVEL = 68,
+    TGFileName = "dungeon_LifeWoodland_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 66,
+        HIGH_LEVEL = 68,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 99.5876715789472,
+        RANK_DECREASE_NUM = 13.8036783838384,
+        RANK_TOTAL_SCORE = 1403150.07444923,
+        TGFileName = "dungeon_LifeWoodland_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 67,
+        HIGH_LEVEL = 69,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 100.076450099403,
+        RANK_DECREASE_NUM = 14.0202914438503,
+        RANK_TOTAL_SCORE = 1435725.69535384,
+        TGFileName = "dungeon_LifeWoodland_2.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 68,
+        HIGH_LEVEL = 70,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 101.163223261297,
+        RANK_DECREASE_NUM = 14.2369167883212,
+        RANK_TOTAL_SCORE = 1468628.78813538,
+        TGFileName = "dungeon_LifeWoodland_3.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 69,
+        HIGH_LEVEL = 71,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 102.24696792233,
+        RANK_DECREASE_NUM = 14.4535541501976,
+        RANK_TOTAL_SCORE = 1501859.35279384,
+        TGFileName = "dungeon_LifeWoodland_4.stg"
+      }
+    }
+  },
+  QuestSign35 = {
+    ID = GC_GM_QUEST34,
+    Name = str_quest_name16,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 68,
+    HIGH_LEVEL = 70,
+    TGFileName = "dungeon_CastleOfRule_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 68,
+        HIGH_LEVEL = 70,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 101.163223261297,
+        RANK_DECREASE_NUM = 14.2369167883212,
+        RANK_TOTAL_SCORE = 1468628.78813538,
+        TGFileName = "dungeon_CastleOfRule_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 69,
+        HIGH_LEVEL = 71,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 102.24696792233,
+        RANK_DECREASE_NUM = 14.4535541501976,
+        RANK_TOTAL_SCORE = 1501859.35279384,
+        TGFileName = "dungeon_CastleOfRule_2.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 70,
+        HIGH_LEVEL = 72,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 102.73621740458,
+        RANK_DECREASE_NUM = 16.7659465944128,
+        RANK_TOTAL_SCORE = 1417308.35938083,
+        TGFileName = "dungeon_CastleOfRule_3.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 71,
+        HIGH_LEVEL = 73,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 103.81480935849,
+        RANK_DECREASE_NUM = 17.0135587384045,
+        RANK_TOTAL_SCORE = 1448587.29022296,
+        TGFileName = "dungeon_CastleOfRule_4.stg"
+      }
+    }
+  },
+  QuestSign36 = {
+    ID = GC_GM_QUEST35,
+    Name = str_quest_name16,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 2,
+    HIGH_LEVEL = 24,
+    TGFileName = "dungeon_MoonEvent_V.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 2,
+        HIGH_LEVEL = 24,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 2,
+        RANK_DECREASE_NUM = 3,
+        RANK_TOTAL_SCORE = 80000,
+        TGFileName = "dungeon_MoonEvent_V.stg"
+      }
+    }
+  },
+  QuestSign37 = {
+    ID = GC_GM_QUEST36,
+    Name = str_quest_name16,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 26,
+    HIGH_LEVEL = 38,
+    TGFileName = "dungeon_MoonEvent_S.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 26,
+        HIGH_LEVEL = 38,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 2,
+        RANK_DECREASE_NUM = 3,
+        RANK_TOTAL_SCORE = 80000,
+        TGFileName = "dungeon_MoonEvent_S.stg"
+      }
+    }
+  },
+  QuestSign38 = {
+    ID = GC_GM_QUEST37,
+    Name = str_quest_name16,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 40,
+    HIGH_LEVEL = 54,
+    TGFileName = "dungeon_MoonEvent_E.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 40,
+        HIGH_LEVEL = 54,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 2,
+        RANK_DECREASE_NUM = 3,
+        RANK_TOTAL_SCORE = 80000,
+        TGFileName = "dungeon_MoonEvent_E.stg"
+      }
+    }
+  },
+  QuestSign39 = {
+    ID = GC_GM_QUEST38,
+    Name = str_quest_name16,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 56,
+    HIGH_LEVEL = 70,
+    TGFileName = "dungeon_MoonEvent_X.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 56,
+        HIGH_LEVEL = 70,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 2,
+        RANK_DECREASE_NUM = 3,
+        RANK_TOTAL_SCORE = 80000,
+        TGFileName = "dungeon_MoonEvent_X.stg"
+      }
+    }
+  },
+  QuestSign40 = {
+    ID = GC_GM_QUEST39,
+    Name = str_quest_name16,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 70,
+    HIGH_LEVEL = 72,
+    TGFileName = "dungeon_GoblinLaborCamp_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 70,
+        HIGH_LEVEL = 72,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 102.73621740458,
+        RANK_DECREASE_NUM = 16.7659465944128,
+        RANK_TOTAL_SCORE = 1417308.35938083,
+        TGFileName = "dungeon_GoblinLaborCamp_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 71,
+        HIGH_LEVEL = 73,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 103.81480935849,
+        RANK_DECREASE_NUM = 17.0135587384045,
+        RANK_TOTAL_SCORE = 1448587.29022296,
+        TGFileName = "dungeon_GoblinLaborCamp_2.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 72,
+        HIGH_LEVEL = 74,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 104.890674626866,
+        RANK_DECREASE_NUM = 17.2611837524178,
+        RANK_TOTAL_SCORE = 1480168.50279763,
+        TGFileName = "dungeon_GoblinLaborCamp_3.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 73,
+        HIGH_LEVEL = 75,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 105.380616220183,
+        RANK_DECREASE_NUM = 17.5088213645509,
+        RANK_TOTAL_SCORE = 1512051.99710485,
+        TGFileName = "dungeon_GoblinLaborCamp_4.stg"
+      }
+    }
+  },
+  QuestSign41 = {
+    ID = GC_GM_QUEST40,
+    Name = str_quest_name16,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 71,
+    HIGH_LEVEL = 73,
+    TGFileName = "dungeon_UndergroundTunnel_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 71,
+        HIGH_LEVEL = 73,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 103.81480935849,
+        RANK_DECREASE_NUM = 17.0135587384045,
+        RANK_TOTAL_SCORE = 1448587.29022296,
+        TGFileName = "dungeon_UndergroundTunnel_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 72,
+        HIGH_LEVEL = 74,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 104.890674626866,
+        RANK_DECREASE_NUM = 17.2611837524178,
+        RANK_TOTAL_SCORE = 1480168.50279763,
+        TGFileName = "dungeon_UndergroundTunnel_2.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 73,
+        HIGH_LEVEL = 75,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 105.380616220183,
+        RANK_DECREASE_NUM = 17.5088213645509,
+        RANK_TOTAL_SCORE = 1512051.99710485,
+        TGFileName = "dungeon_UndergroundTunnel_3.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 74,
+        HIGH_LEVEL = 76,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 106.451817931034,
+        RANK_DECREASE_NUM = 17.7564713105077,
+        RANK_TOTAL_SCORE = 1544237.77314461,
+        TGFileName = "dungeon_UndergroundTunnel_4.stg"
+      }
+    }
+  },
+  QuestSign42 = {
+    ID = GC_GM_QUEST41,
+    Name = str_quest_name16,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 72,
+    HIGH_LEVEL = 74,
+    TGFileName = "dungeon_KungjiVillage_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 72,
+        HIGH_LEVEL = 74,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 104.890674626866,
+        RANK_DECREASE_NUM = 17.2611837524178,
+        RANK_TOTAL_SCORE = 1480168.50279763,
+        TGFileName = "dungeon_KungjiVillage_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 73,
+        HIGH_LEVEL = 75,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 105.380616220183,
+        RANK_DECREASE_NUM = 17.5088213645509,
+        RANK_TOTAL_SCORE = 1512051.99710485,
+        TGFileName = "dungeon_KungjiVillage_2.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 74,
+        HIGH_LEVEL = 76,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 106.451817931034,
+        RANK_DECREASE_NUM = 17.7564713105077,
+        RANK_TOTAL_SCORE = 1544237.77314461,
+        TGFileName = "dungeon_KungjiVillage_3.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 75,
+        HIGH_LEVEL = 77,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 107.52055497307,
+        RANK_DECREASE_NUM = 18.0041333333333,
+        RANK_TOTAL_SCORE = 1576725.83091692,
+        TGFileName = "dungeon_KungjiVillage_4.stg"
+      }
+    }
+  },
+  QuestSign43 = {
+    ID = GC_GM_QUEST42,
+    Name = str_quest_name16,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 77,
+    HIGH_LEVEL = 79,
+    TGFileName = "dungeon_DwarvenBase_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 77,
+        HIGH_LEVEL = 79,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 121.195393939394,
+        RANK_DECREASE_NUM = 18.4994926169721,
+        RANK_TOTAL_SCORE = 1642608.79165917,
+        TGFileName = "dungeon_DwarvenBase_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 78,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 122.375684429066,
+        RANK_DECREASE_NUM = 18.7471893983568,
+        RANK_TOTAL_SCORE = 1676003.69462911,
+        TGFileName = "dungeon_DwarvenBase_2.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 79,
+        HIGH_LEVEL = 82,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 122.922117887564,
+        RANK_DECREASE_NUM = 18.9948972972973,
+        RANK_TOTAL_SCORE = 1709700.8793316,
+        TGFileName = "dungeon_DwarvenBase_3.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 80,
+        HIGH_LEVEL = 82,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 124.098108150646,
+        RANK_DECREASE_NUM = 19.2426160899503,
+        RANK_TOTAL_SCORE = 1743700.34576662,
+        TGFileName = "dungeon_DwarvenBase_4.stg"
+      }
+    }
+  },
+  QuestSign44 = {
+    ID = GC_GM_QUEST43,
+    Name = str_quest_name16,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 73,
+    HIGH_LEVEL = 75,
+    TGFileName = "dungeon_MirageDesert_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 73,
+        HIGH_LEVEL = 75,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 105.380616220183,
+        RANK_DECREASE_NUM = 17.5088213645509,
+        RANK_TOTAL_SCORE = 1512051.99710485,
+        TGFileName = "dungeon_MirageDesert_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 74,
+        HIGH_LEVEL = 76,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 106.451817931034,
+        RANK_DECREASE_NUM = 17.7564713105077,
+        RANK_TOTAL_SCORE = 1544237.77314461,
+        TGFileName = "dungeon_MirageDesert_2.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 75,
+        HIGH_LEVEL = 77,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 107.52055497307,
+        RANK_DECREASE_NUM = 18.0041333333333,
+        RANK_TOTAL_SCORE = 1576725.83091692,
+        TGFileName = "dungeon_MirageDesert_3.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 76,
+        HIGH_LEVEL = 78,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 108.011357173145,
+        RANK_DECREASE_NUM = 18.2518071831617,
+        RANK_TOTAL_SCORE = 1609516.17042177,
+        TGFileName = "dungeon_MirageDesert_4.stg"
+      }
+    }
+  },
+  QuestSign45 = {
+    ID = GC_GM_QUEST44,
+    Name = str_quest_name16,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 78,
+    HIGH_LEVEL = 80,
+    TGFileName = "dungeon_DwarfSupplyRoute_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 78,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 122.375684429066,
+        RANK_DECREASE_NUM = 18.7471893983568,
+        RANK_TOTAL_SCORE = 1676003.69462911,
+        TGFileName = "dungeon_DwarfSupplyRoute_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 79,
+        HIGH_LEVEL = 81,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 122.922117887564,
+        RANK_DECREASE_NUM = 18.9948972972973,
+        RANK_TOTAL_SCORE = 1709700.8793316,
+        TGFileName = "dungeon_DwarfSupplyRoute_2.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 80,
+        HIGH_LEVEL = 82,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 124.098108150646,
+        RANK_DECREASE_NUM = 19.2426160899503,
+        RANK_TOTAL_SCORE = 1743700.34576662,
+        TGFileName = "dungeon_DwarfSupplyRoute_3.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 81,
+        HIGH_LEVEL = 83,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 125.271837061769,
+        RANK_DECREASE_NUM = 19.4903455584416,
+        RANK_TOTAL_SCORE = 1778002.0939342,
+        TGFileName = "dungeon_DwarfSupplyRoute_4.stg"
+      }
+    }
+  },
+  QuestSign46 = {
+    ID = GC_GM_QUEST45,
+    Name = str_quest_name16,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 79,
+    HIGH_LEVEL = 81,
+    TGFileName = "dungeon_ThunderHammer_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 79,
+        HIGH_LEVEL = 81,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 122.922117887564,
+        RANK_DECREASE_NUM = 18.9948972972973,
+        RANK_TOTAL_SCORE = 1709700.8793316,
+        TGFileName = "dungeon_ThunderHammer_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 80,
+        HIGH_LEVEL = 82,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 124.098108150646,
+        RANK_DECREASE_NUM = 19.2426160899503,
+        RANK_TOTAL_SCORE = 1743700.34576662,
+        TGFileName = "dungeon_ThunderHammer_2.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 81,
+        HIGH_LEVEL = 83,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 125.271837061769,
+        RANK_DECREASE_NUM = 19.4903455584416,
+        RANK_TOTAL_SCORE = 1778002.0939342,
+        TGFileName = "dungeon_ThunderHammer_3.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 82,
+        HIGH_LEVEL = 84,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 125.81947368421,
+        RANK_DECREASE_NUM = 19.8696727272727,
+        RANK_TOTAL_SCORE = 1812606.12383432,
+        TGFileName = "dungeon_ThunderHammer_4.stg"
+      }
+    }
+  },
+  QuestSign47 = {
+    ID = GC_GM_QUEST46,
+    Name = str_quest_name16,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 40,
+    HIGH_LEVEL = 80,
+    TGFileName = "dungeon_Hero.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 40,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 142.702354,
+        RANK_DECREASE_NUM = 16.28824848,
+        RANK_TOTAL_SCORE = 1839675,
+        TGFileName = "dungeon_Hero.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 40,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 142.702354,
+        RANK_DECREASE_NUM = 16.28824848,
+        RANK_TOTAL_SCORE = 1839675,
+        TGFileName = "dungeon_Hero.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 40,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 142.702354,
+        RANK_DECREASE_NUM = 16.28824848,
+        RANK_TOTAL_SCORE = 1839675,
+        TGFileName = "dungeon_Hero.stg"
+      }
+    }
+  },
+  QuestSign48 = {
+    ID = GC_GM_QUEST47,
+    Name = str_quest_name16,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 30,
+    HIGH_LEVEL = 75,
+    TGFileName = "dungeon_Hero_HellsFurnace.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 30,
+        HIGH_LEVEL = 75,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 157.3945688,
+        RANK_DECREASE_NUM = 15.22275754,
+        RANK_TOTAL_SCORE = 1887705,
+        TGFileName = "dungeon_Hero_HellsFurnace.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 30,
+        HIGH_LEVEL = 75,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 157.3945688,
+        RANK_DECREASE_NUM = 15.22275754,
+        RANK_TOTAL_SCORE = 1887705,
+        TGFileName = "dungeon_Hero_HellsFurnace.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 30,
+        HIGH_LEVEL = 75,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 157.3945688,
+        RANK_DECREASE_NUM = 15.22275754,
+        RANK_TOTAL_SCORE = 1887705,
+        TGFileName = "dungeon_Hero_HellsFurnace.stg"
+      }
+    }
+  },
+  QuestSign49 = {
+    ID = GC_GM_QUEST48,
+    Name = str_quest_name16,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 80,
+    HIGH_LEVEL = 82,
+    TGFileName = "dungeon_AncientDebris_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 80,
+        HIGH_LEVEL = 82,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 124.098108150646,
+        RANK_DECREASE_NUM = 19.2426160899503,
+        RANK_TOTAL_SCORE = 1743700.34576662,
+        TGFileName = "dungeon_AncientDebris_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 81,
+        HIGH_LEVEL = 83,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 125.271837061769,
+        RANK_DECREASE_NUM = 19.4903455584416,
+        RANK_TOTAL_SCORE = 1778002.0939342,
+        TGFileName = "dungeon_AncientDebris_2.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 82,
+        HIGH_LEVEL = 84,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 125.81947368421,
+        RANK_DECREASE_NUM = 19.8696727272727,
+        RANK_TOTAL_SCORE = 1812606.12383432,
+        TGFileName = "dungeon_AncientDebris_3.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 83,
+        HIGH_LEVEL = 85,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 126.148273615635,
+        RANK_DECREASE_NUM = 20.1181922077922,
+        RANK_TOTAL_SCORE = 1835277.25377515,
+        TGFileName = "dungeon_AncientDebris_4.stg"
+      }
+    }
+  },
+  QuestSign50 = {
+    ID = GC_GM_DOTA,
+    Name = str_quest_name16,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 0,
+    HIGH_LEVEL = 80,
+    TGFileName = "dota_quest_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 0,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 2,
+        RANK_DECREASE_NUM = 3,
+        RANK_TOTAL_SCORE = 80000,
+        TGFileName = "dota_quest_1.stg"
+      }
+    }
+  },
+  QuestSign51 = {
+    ID = GC_GM_QUEST49,
+    Name = str_quest_name16,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 20,
+    HIGH_LEVEL = 40,
+    TGFileName = "dungeon_Event_Carnival_1_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 20,
+        HIGH_LEVEL = 39,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 46.2275702479339,
+        RANK_DECREASE_NUM = 4.07650531286896,
+        RANK_TOTAL_SCORE = 381794.970887574,
+        TGFileName = "dungeon_Event_Carnival_1_1.stg",
+        ExTGFileName = "dungeon_Event_Carnival_1_0.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 40,
+        HIGH_LEVEL = 59,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 89.0539628616186,
+        RANK_DECREASE_NUM = 8.86267955909637,
+        RANK_TOTAL_SCORE = 997743.7241013,
+        TGFileName = "dungeon_Event_Carnival_2_1.stg",
+        ExTGFileName = "dungeon_Event_Carnival_2_0.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 60,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 102.73621740458,
+        RANK_DECREASE_NUM = 16.7659465944128,
+        RANK_TOTAL_SCORE = 1417308.35938083,
+        TGFileName = "dungeon_Event_Carnival_3_1.stg",
+        ExTGFileName = "dungeon_Event_Carnival_3_0.stg"
+      }
+    }
+  },
+  QuestSign52 = {	-- Eclipse / Rei Gosma
+    ID = GC_GM_QUEST50,
+    Name = str_quest_name16,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 80,
+    HIGH_LEVEL = 85,
+    TGFileName = "Dungeon_Slimeking.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name3,
+        Desc = str_quest_desc2,
+		LOW_LEVEL = 80,
+		HIGH_LEVEL = 85,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 44.6903225806452,
+        RANK_DECREASE_NUM = 0.98587439957303,
+        RANK_TOTAL_SCORE = 38905.7146290396,
+        TGFileName = "Dungeon_Slimeking.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name3,
+        Desc = str_quest_desc2,
+		LOW_LEVEL = 80,
+		HIGH_LEVEL = 85,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 44.6903225806452,
+        RANK_DECREASE_NUM = 0.98587439957303,
+        RANK_TOTAL_SCORE = 38905.7146290396,
+        TGFileName = "Dungeon_Slimeking_Hell.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name3,
+        Desc = str_quest_desc2,
+		LOW_LEVEL = 80,
+		HIGH_LEVEL = 85,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 44.6903225806452,
+        RANK_DECREASE_NUM = 0.98587439957303,
+        RANK_TOTAL_SCORE = 38905.7146290396,
+        TGFileName = "Dungeon_Slimeking_Break.stg"
+      },
+    }
+  },
+  QuestSign53 = {
+    ID = GC_GM_QUEST51,
+    Name = str_quest_name16,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 0,
+    HIGH_LEVEL = 85,
+    TGFileName = "dungeon_Event_Hero.stg",
+    ReviseCharLevel = TRUE,
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 0,
+        HIGH_LEVEL = 85,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 2,
+        RANK_DECREASE_NUM = 3,
+        RANK_TOTAL_SCORE = 80000,
+        TGFileName = "dungeon_Event_Hero.stg"
+      }
+    }
+  },
+  QuestSign54 = {
+    ID = GC_GM_QUEST52,
+    Name = str_quest_name16,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 80,
+    HIGH_LEVEL = 80,
+    TGFileName = "dungeon_RH_SuperMonster_01.stg",
+    LevelInfo = {
+      {
+        Level = 0,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 80,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 318.972416534181,
+        RANK_DECREASE_NUM = 34.7417575757576,
+        RANK_TOTAL_SCORE = 3.5214538814975E7,
+        TGFileName = "dungeon_RH_SuperMonster_01.stg"
+      },
+      {
+        Level = 1,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 80,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 236.923656597774,
+        RANK_DECREASE_NUM = 25.8051913419913,
+        RANK_TOTAL_SCORE = 2.61563598260355E7,
+        TGFileName = "dungeon_RH_SuperMonster_02.stg"
+      },
+      {
+        Level = 2,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 80,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 260.398044515103,
+        RANK_DECREASE_NUM = 28.3619688311688,
+        RANK_TOTAL_SCORE = 2.87479310767865E7,
+        TGFileName = "dungeon_RH_SuperMonster_03.stg"
+      },
+      {
+        Level = 3,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 80,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 294.1240063593,
+        RANK_DECREASE_NUM = 32.0353246753247,
+        RANK_TOTAL_SCORE = 3.24712755757852E7,
+        TGFileName = "dungeon_RH_SuperMonster_04.stg"
+      },
+      {
+        Level = 4,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 80,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 419.689173290938,
+        RANK_DECREASE_NUM = 45.7116,
+        RANK_TOTAL_SCORE = 4.63336637182066E7,
+        TGFileName = "dungeon_RH_SuperMonster_05.stg"
+      },
+      {
+        Level = 5,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 80,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 260.171216216216,
+        RANK_DECREASE_NUM = 28.3372632034632,
+        RANK_TOTAL_SCORE = 2.87228892439463E7,
+        TGFileName = "dungeon_RH_SuperMonster_06.stg"
+      },
+      {
+        Level = 6,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 80,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 433.225818759936,
+        RANK_DECREASE_NUM = 47.185980952381,
+        RANK_TOTAL_SCORE = 4.78281087002276E7,
+        TGFileName = "dungeon_RH_SuperMonster_07.stg"
+      },
+      {
+        Level = 7,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 80,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 288.42906200318,
+        RANK_DECREASE_NUM = 31.4150441558442,
+        RANK_TOTAL_SCORE = 3.18425540040055E7,
+        TGFileName = "dungeon_RH_SuperMonster_08.stg"
+      },
+      {
+        Level = 8,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 80,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 251.120604133545,
+        RANK_DECREASE_NUM = 27.3514909090909,
+        RANK_TOTAL_SCORE = 2.7723702123168E7,
+        TGFileName = "dungeon_RH_SuperMonster_09.stg"
+      },
+      {
+        Level = 9,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 80,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 333.821033386327,
+        RANK_DECREASE_NUM = 36.3590354978355,
+        RANK_TOTAL_SCORE = 3.68538253720073E7,
+        TGFileName = "dungeon_RH_SuperMonster_10.stg"
+      },
+      {
+        Level = 10,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 80,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 239.599459459459,
+        RANK_DECREASE_NUM = 26.0966337662338,
+        RANK_TOTAL_SCORE = 2.64517683279927E7,
+        TGFileName = "dungeon_RH_SuperMonster_11.stg"
+      },
+      {
+        Level = 11,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 80,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 253.693545310016,
+        RANK_DECREASE_NUM = 27.6317298701299,
+        RANK_TOTAL_SCORE = 2.80077547002276E7,
+        TGFileName = "dungeon_RH_SuperMonster_12.stg"
+      },
+      {
+        Level = 12,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 80,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 292.65,
+        RANK_DECREASE_NUM = 31.8747792207792,
+        RANK_TOTAL_SCORE = 3.23085453475193E7,
+        TGFileName = "dungeon_RH_SuperMonster_13.stg"
+      },
+      {
+        Level = 13,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 80,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 170.844324324324,
+        RANK_DECREASE_NUM = 18.6079792207792,
+        RANK_TOTAL_SCORE = 1.88612048515248E7,
+        TGFileName = "dungeon_RH_SuperMonster_14.stg"
+      },
+      {
+        Level = 14,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 80,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 172.426216216216,
+        RANK_DECREASE_NUM = 18.7802753246753,
+        RANK_TOTAL_SCORE = 1.90358456371871E7,
+        TGFileName = "dungeon_RH_SuperMonster_15.stg"
+      },
+      {
+        Level = 15,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 80,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 316.368744038156,
+        RANK_DECREASE_NUM = 34.4581714285714,
+        RANK_TOTAL_SCORE = 3.49270935017751E7,
+        TGFileName = "dungeon_RH_SuperMonster_16.stg"
+      },
+      {
+        Level = 16,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 80,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 162.445230524642,
+        RANK_DECREASE_NUM = 17.6931688311688,
+        RANK_TOTAL_SCORE = 1.7933945316568E7,
+        TGFileName = "dungeon_RH_SuperMonster_17.stg"
+      },
+      {
+        Level = 17,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 80,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 316.368744038156,
+        RANK_DECREASE_NUM = 34.4581714285714,
+        RANK_TOTAL_SCORE = 3.49270935017751E7,
+        TGFileName = "dungeon_RH_SuperMonster_18.stg"
+      },
+      {
+        Level = 18,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 80,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 279.170842607313,
+        RANK_DECREASE_NUM = 30.4066597402597,
+        RANK_TOTAL_SCORE = 3.08204470462449E7,
+        TGFileName = "dungeon_RH_SuperMonster_19.stg"
+      },
+      {
+        Level = 19,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 80,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 248.510461049285,
+        RANK_DECREASE_NUM = 27.0672,
+        RANK_TOTAL_SCORE = 2.74355424573509E7,
+        TGFileName = "dungeon_RH_SuperMonster_20.stg"
+      },
+      {
+        Level = 20,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 80,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 219.732734499205,
+        RANK_DECREASE_NUM = 23.9327948051948,
+        RANK_TOTAL_SCORE = 2.42584828870733E7,
+        TGFileName = "dungeon_RH_SuperMonster_21.stg"
+      },
+      {
+        Level = 21,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 80,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 464.432193958665,
+        RANK_DECREASE_NUM = 50.5849090909091,
+        RANK_TOTAL_SCORE = 5.12732909597178E7,
+        TGFileName = "dungeon_RH_SuperMonster_22.stg"
+      },
+      {
+        Level = 22,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 80,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 220.26579491256,
+        RANK_DECREASE_NUM = 23.9908545454545,
+        RANK_TOTAL_SCORE = 2.43173327300182E7,
+        TGFileName = "dungeon_RH_SuperMonster_23.stg"
+      },
+      {
+        Level = 23,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 80,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 395.818696343402,
+        RANK_DECREASE_NUM = 43.1116813852814,
+        RANK_TOTAL_SCORE = 4.36983642583523E7,
+        TGFileName = "dungeon_RH_SuperMonster_24.stg"
+      },
+      {
+        Level = 24,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 80,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 740.482511923688,
+        RANK_DECREASE_NUM = 80.6516883116883,
+        RANK_TOTAL_SCORE = 8.17492322416932E7,
+        TGFileName = "dungeon_RH_SuperMonster_25.stg"
+      },
+      {
+        Level = 25,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 80,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 253.409570747218,
+        RANK_DECREASE_NUM = 27.6008,
+        RANK_TOTAL_SCORE = 2.79764039227128E7,
+        TGFileName = "dungeon_RH_SuperMonster_26.stg"
+      },
+      {
+        Level = 26,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 80,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 358.17413354531,
+        RANK_DECREASE_NUM = 39.0115203463203,
+        RANK_TOTAL_SCORE = 3.95424064102412E7,
+        TGFileName = "dungeon_RH_SuperMonster_27.stg"
+      },
+      {
+        Level = 27,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 80,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 412.47000317965,
+        RANK_DECREASE_NUM = 44.9253042424242,
+        RANK_TOTAL_SCORE = 4.55366676993719E7,
+        TGFileName = "dungeon_RH_SuperMonster_28.stg"
+      },
+      {
+        Level = 28,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 80,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 237.580063593005,
+        RANK_DECREASE_NUM = 25.8766857142857,
+        RANK_TOTAL_SCORE = 2.62288271254438E7,
+        TGFileName = "dungeon_RH_SuperMonster_29.stg"
+      },
+      {
+        Level = 29,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 80,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 262.980643879173,
+        RANK_DECREASE_NUM = 28.6432597402597,
+        RANK_TOTAL_SCORE = 2.90330499172736E7,
+        TGFileName = "dungeon_RH_SuperMonster_30.stg"
+      }
+    }
+  },
+  QuestSign55 = {
+    ID = GC_GM_QUEST53,
+    Name = str_quest_name16,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 0,
+    HIGH_LEVEL = 80,
+    TGFileName = "dungeon_Event_GhostTrain_H.stg",
+    ReviseCharLevel = TRUE,
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 0,
+        HIGH_LEVEL = 85,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 285,
+        RANK_DECREASE_NUM = 100,
+        RANK_TOTAL_SCORE = 2189610,
+        TGFileName = "dungeon_Event_GhostTrain_1_H.stg",
+        ExTGFileName = "dungeon_Event_GhostTrain_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 0,
+        HIGH_LEVEL = 85,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 285,
+        RANK_DECREASE_NUM = 100,
+        RANK_TOTAL_SCORE = 2189610,
+        TGFileName = "dungeon_Event_GhostTrain_H.stg",
+        ExTGFileName = "dungeon_Event_GhostTrain.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 0,
+        HIGH_LEVEL = 85,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 285,
+        RANK_DECREASE_NUM = 100,
+        RANK_TOTAL_SCORE = 2189610,
+        TGFileName = "dungeon_Event_GhostTrain_H.stg",
+        ExTGFileName = "dungeon_Event_GhostTrain.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 0,
+        HIGH_LEVEL = 85,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 285,
+        RANK_DECREASE_NUM = 100,
+        RANK_TOTAL_SCORE = 2189610,
+        TGFileName = "dungeon_Event_GhostTrain_H.stg",
+        ExTGFileName = "dungeon_Event_GhostTrain.stg"
+      }
+    }
+  },
+  QuestSign56 = {
+    ID = GC_GM_QUEST54,
+    Name = str_quest_name16,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 0,
+    HIGH_LEVEL = 85,
+    TGFileName = "dungeon_Event_HungryPet.stg",
+    ReviseCharLevel = TRUE,
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 0,
+        HIGH_LEVEL = 85,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 100,
+        RANK_DECREASE_NUM = 3,
+        RANK_TOTAL_SCORE = 800000,
+        TGFileName = "dungeon_Event_HungryPet.stg"
+      }
+    }
+  },
+  QuestSign57 = {
+    ID = GC_GM_QUEST55,
+    Name = str_quest_name16,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 81,
+    HIGH_LEVEL = 83,
+    TGFileName = "dungeon_KaruelBorder_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 81,
+        HIGH_LEVEL = 83,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 125.271837061769,
+        RANK_DECREASE_NUM = 19.4903455584416,
+        RANK_TOTAL_SCORE = 1778002.0939342,
+        TGFileName = "dungeon_KaruelBorder_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 82,
+        HIGH_LEVEL = 84,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 125.81947368421,
+        RANK_DECREASE_NUM = 19.8696727272727,
+        RANK_TOTAL_SCORE = 1812606.12383432,
+        TGFileName = "dungeon_KaruelBorder_2.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 83,
+        HIGH_LEVEL = 85,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 126.148273615635,
+        RANK_DECREASE_NUM = 20.1181922077922,
+        RANK_TOTAL_SCORE = 1835277.25377515,
+        TGFileName = "dungeon_KaruelBorder_3.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 84,
+        HIGH_LEVEL = 86,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 126.470709677419,
+        RANK_DECREASE_NUM = 20.3667116883117,
+        RANK_TOTAL_SCORE = 1857948.38371597,
+        TGFileName = "dungeon_KaruelBorder_4.stg"
+      }
+    }
+  },
+  QuestSign58 = {
+    ID = GC_GM_QUEST56,
+    Name = str_quest_name16,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 82,
+    HIGH_LEVEL = 84,
+    TGFileName = "dungeon_Karuel_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 82,
+        HIGH_LEVEL = 84,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 125.81947368421,
+        RANK_DECREASE_NUM = 19.8696727272727,
+        RANK_TOTAL_SCORE = 1812606.12383432,
+        TGFileName = "dungeon_Karuel_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 83,
+        HIGH_LEVEL = 85,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 126.148273615635,
+        RANK_DECREASE_NUM = 20.1181922077922,
+        RANK_TOTAL_SCORE = 1835277.25377515,
+        TGFileName = "dungeon_Karuel_2.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 84,
+        HIGH_LEVEL = 86,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 126.470709677419,
+        RANK_DECREASE_NUM = 20.3667116883117,
+        RANK_TOTAL_SCORE = 1857948.38371597,
+        TGFileName = "dungeon_Karuel_3.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 85,
+        HIGH_LEVEL = 87,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 126.182257551669,
+        RANK_DECREASE_NUM = 20.6152311688312,
+        RANK_TOTAL_SCORE = 1880619.5136568,
+        TGFileName = "dungeon_Karuel_4.stg"
+      }
+    }
+  },
+  QuestSign59 = {
+    ID = GC_GM_QUEST57,
+    Name = str_quest_name16,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 0,
+    HIGH_LEVEL = 85,
+    TGFileName = "dungeon_Event_NighterMarket_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 0,
+        HIGH_LEVEL = 85,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 100,
+        RANK_DECREASE_NUM = 3,
+        RANK_TOTAL_SCORE = 200000,
+        TGFileName = "dungeon_Event_NighterMarket_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 0,
+        HIGH_LEVEL = 85,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 101,
+        RANK_DECREASE_NUM = 3,
+        RANK_TOTAL_SCORE = 220000,
+        TGFileName = "dungeon_Event_NighterMarket_2.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 0,
+        HIGH_LEVEL = 85,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 102,
+        RANK_DECREASE_NUM = 3,
+        RANK_TOTAL_SCORE = 240000,
+        TGFileName = "dungeon_Event_NighterMarket_H.stg"
+      }
+    }
+  },
+  QuestSign60 = {
+    ID = GC_GM_QUEST58,
+    Name = str_quest_name16,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 85,
+    HIGH_LEVEL = 85,
+--    TGFileName = "dungeon_BerkasLair.stg",
+    TGFileName = "dungeon_elyos_raidfire_1.stg",	
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 85,
+        HIGH_LEVEL = 85,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 85.28515103,
+        RANK_DECREASE_NUM = 20.6152311688312,
+        RANK_TOTAL_SCORE = 8070408,
+--        TGFileName = "dungeon_BerkasLair.stg"
+        TGFileName = "dungeon_elyos_raidfire_1.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 85,
+        HIGH_LEVEL = 85,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 85.28515103,
+        RANK_DECREASE_NUM = 20.6152311688312,
+        RANK_TOTAL_SCORE = 8070408,
+--        TGFileName = "dungeon_BerkasLair.stg"
+        TGFileName = "dungeon_elyos_raidfire_1.stg"
+      },	  
+    }
+  },
+  QuestSign61 = {
+    ID = GC_GM_QUEST59,
+    Name = str_quest_name1,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 74,
+    HIGH_LEVEL = 76,
+    TGFileName = "dungeon_Thief_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 74,
+        HIGH_LEVEL = 76,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 106.451817931034,
+        RANK_DECREASE_NUM = 17.7564713105077,
+        RANK_TOTAL_SCORE = 1544237.77314461,
+        TGFileName = "dungeon_Thief_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 75,
+        HIGH_LEVEL = 77,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 107.52055497307,
+        RANK_DECREASE_NUM = 18.0041333333333,
+        RANK_TOTAL_SCORE = 1576725.83091692,
+        TGFileName = "dungeon_Thief_2.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 76,
+        HIGH_LEVEL = 78,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 108.011357173145,
+        RANK_DECREASE_NUM = 18.2518071831617,
+        RANK_TOTAL_SCORE = 1609516.17042177,
+        TGFileName = "dungeon_Thief_3.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 77,
+        HIGH_LEVEL = 79,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 121.195393939394,
+        RANK_DECREASE_NUM = 18.4994926169721,
+        RANK_TOTAL_SCORE = 1642608.79165917,
+        TGFileName = "dungeon_Thief_Hell.stg"
+      }
+    }
+  },
+  QuestSign62 = {
+    ID = GC_GM_QUEST60,
+    Name = str_quest_name1,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 75,
+    HIGH_LEVEL = 77,
+    TGFileName = "dungeon_Ra_Canyon_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 75,
+        HIGH_LEVEL = 77,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 107.52055497307,
+        RANK_DECREASE_NUM = 18.0041333333333,
+        RANK_TOTAL_SCORE = 1576725.83091692,
+        TGFileName = "dungeon_Ra_Canyon_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 76,
+        HIGH_LEVEL = 78,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 108.011357173145,
+        RANK_DECREASE_NUM = 18.2518071831617,
+        RANK_TOTAL_SCORE = 1609516.17042177,
+        TGFileName = "dungeon_Ra_Canyon_2.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 77,
+        HIGH_LEVEL = 79,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 121.195393939394,
+        RANK_DECREASE_NUM = 18.4994926169721,
+        RANK_TOTAL_SCORE = 1642608.79165917,
+        TGFileName = "dungeon_Ra_Canyon_3.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 78,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 122.375684429066,
+        RANK_DECREASE_NUM = 18.7471893983568,
+        RANK_TOTAL_SCORE = 1676003.69462911,
+        TGFileName = "dungeon_Ra_Canyon_Hell.stg"
+      }
+    }
+  },
+  QuestSign63 = {
+    ID = GC_GM_QUEST61,
+    Name = str_quest_name1,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 76,
+    HIGH_LEVEL = 78,
+    TGFileName = "dungeon_Seth_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 76,
+        HIGH_LEVEL = 78,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 108.011357173145,
+        RANK_DECREASE_NUM = 18.2518071831617,
+        RANK_TOTAL_SCORE = 1609516.17042177,
+        TGFileName = "dungeon_Seth_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 77,
+        HIGH_LEVEL = 79,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 121.195393939394,
+        RANK_DECREASE_NUM = 18.4994926169721,
+        RANK_TOTAL_SCORE = 1642608.79165917,
+        TGFileName = "dungeon_Seth_2.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 78,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 122.375684429066,
+        RANK_DECREASE_NUM = 18.7471893983568,
+        RANK_TOTAL_SCORE = 1676003.69462911,
+        TGFileName = "dungeon_Seth_3.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 79,
+        HIGH_LEVEL = 81,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 122.922117887564,
+        RANK_DECREASE_NUM = 18.9948972972973,
+        RANK_TOTAL_SCORE = 1709700.8793316,
+        TGFileName = "dungeon_Seth_Hell.stg"
+      }
+    }
+  },
+  QuestSign64 = {
+    ID = GC_GM_QUEST62,
+    Name = str_quest_name1,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 83,
+    HIGH_LEVEL = 85,
+    TGFileName = "dungeon_SlippedLandOfCownat_00.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 83,
+        HIGH_LEVEL = 85,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 189.2224104,
+        RANK_DECREASE_NUM = 20.1181922077922,
+        RANK_TOTAL_SCORE = 2385860.43,
+        TGFileName = "dungeon_SlippedLandOfCownat_1.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 84,
+        HIGH_LEVEL = 86,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 189.7060645,
+        RANK_DECREASE_NUM = 20.3667116883117,
+        RANK_TOTAL_SCORE = 2415332.899,
+        TGFileName = "dungeon_SlippedLandOfCownat_2.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 85,
+        HIGH_LEVEL = 87,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 189.7060645,
+        RANK_DECREASE_NUM = 20.6152311688312,
+        RANK_TOTAL_SCORE = 2444805.368,
+        TGFileName = "dungeon_SlippedLandOfCownat_3.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 86,
+        HIGH_LEVEL = 88,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 189.7060645,
+        RANK_DECREASE_NUM = 20.6152311688312,
+        RANK_TOTAL_SCORE = 2444805.368,
+        TGFileName = "dungeon_SlippedLandOfCownat_Hell.stg"
+      }
+    }
+  },
+  QuestSign65 = {
+    ID = GC_GM_QUEST63,
+    Name = str_quest_name1,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 0,
+    HIGH_LEVEL = 85,
+    TGFileName = "dungeon_Event_SlippedLandOfCownat.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 0,
+        HIGH_LEVEL = 85,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 2,
+        RANK_DECREASE_NUM = 3,
+        RANK_TOTAL_SCORE = 80000,
+        TGFileName = "dungeon_Event_SlippedLandOfCownat.stg"
+      }
+    }
+  },
+  QuestSign66 = {
+    ID = GC_GM_QUEST64,
+    Name = str_quest_name2,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 0,
+    HIGH_LEVEL = 85,
+    TGFileName = "dungeon_Event_Shooting.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 0,
+        HIGH_LEVEL = 85,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 1000000,
+        RANK_DECREASE_NUM = 3,
+        RANK_TOTAL_SCORE = 800000,
+        TGFileName = "dungeon_Event_Shooting.stg"
+      }
+    }
+  },
+  QuestSign67 = {
+    ID = GC_GM_QUEST65,
+    Name = str_quest_name2,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 1,
+    HIGH_LEVEL = 4,
+    TGFileName = "Dungeon_CursedGarden_01.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 1,
+        HIGH_LEVEL = 1,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 10.9107142857143,
+        RANK_DECREASE_NUM = 0.119025974025974,
+        RANK_TOTAL_SCORE = 7238.74393491124,
+        TGFileName = "Dungeon_CursedGarden_01.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 2,
+        HIGH_LEVEL = 2,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 21.3318560606061,
+        RANK_DECREASE_NUM = 0.243792640692641,
+        RANK_TOTAL_SCORE = 14826.6167416932,
+        TGFileName = "Dungeon_CursedGarden_02.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 3,
+        HIGH_LEVEL = 3,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 43.9551086956522,
+        RANK_DECREASE_NUM = 0.323186413586414,
+        RANK_TOTAL_SCORE = 31939.4865641784,
+        TGFileName = "Dungeon_CursedGarden_03.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 4,
+        HIGH_LEVEL = 4,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 42.1236458333333,
+        RANK_DECREASE_NUM = 0.190973789846517,
+        RANK_TOTAL_SCORE = 31939.4865641784,
+        TGFileName = "Dungeon_CursedGarden_Hell.stg"
+      }
+    }
+  },
+  QuestSign68 = {
+    ID = GC_GM_QUEST66,
+    Name = str_quest_name2,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 4,
+    HIGH_LEVEL = 7,
+    TGFileName = "Dungeon_SoiledBasement_01.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 4,
+        HIGH_LEVEL = 4,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 19.91953125,
+        RANK_DECREASE_NUM = 0.397355844155844,
+        RANK_TOTAL_SCORE = 15103.6214491352,
+        TGFileName = "Dungeon_SoiledBasement_01.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 5,
+        HIGH_LEVEL = 5,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 38.3886666666667,
+        RANK_DECREASE_NUM = 0.498554112554113,
+        RANK_TOTAL_SCORE = 30320.3194765589,
+        TGFileName = "Dungeon_SoiledBasement_02.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 6,
+        HIGH_LEVEL = 6,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 68.0980769230769,
+        RANK_DECREASE_NUM = 0.56600999000999,
+        RANK_TOTAL_SCORE = 55936.9692262176,
+        TGFileName = "Dungeon_SoiledBasement_03.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 7,
+        HIGH_LEVEL = 7,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 65.5759259259259,
+        RANK_DECREASE_NUM = 0.334460448642267,
+        RANK_TOTAL_SCORE = 55936.9692262176,
+        TGFileName = "Dungeon_SoiledBasement_Hell.stg"
+      }
+    }
+  },
+  QuestSign69 = {
+    ID = GC_GM_QUEST67,
+    Name = str_quest_name2,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 7,
+    HIGH_LEVEL = 10,
+    TGFileName = "Dungeon_Specter_Hallways_01.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 7,
+        HIGH_LEVEL = 7,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 26.322299382716,
+        RANK_DECREASE_NUM = 0.59071341991342,
+        RANK_TOTAL_SCORE = 22453.2041255121,
+        TGFileName = "Dungeon_Specter_Hallways_01.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 8,
+        HIGH_LEVEL = 8,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 58.0609226190476,
+        RANK_DECREASE_NUM = 0.844522510822511,
+        RANK_TOTAL_SCORE = 51360.9088532089,
+        TGFileName = "Dungeon_Specter_Hallways_02.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 9,
+        HIGH_LEVEL = 9,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 96.2743390804598,
+        RANK_DECREASE_NUM = 0.892533333333334,
+        RANK_TOTAL_SCORE = 88206.2339556213,
+        TGFileName = "Dungeon_Specter_Hallways_03.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 10,
+        HIGH_LEVEL = 10,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 93.0651944444444,
+        RANK_DECREASE_NUM = 0.527406060606061,
+        RANK_TOTAL_SCORE = 88206.2339556213,
+        TGFileName = "Dungeon_Specter_Hallways_Hell.stg"
+      }
+    }
+  },
+  QuestSign70 = {
+    ID = GC_GM_QUEST68,
+    Name = str_quest_name2,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 10,
+    HIGH_LEVEL = 13,
+    TGFileName = "Dungeon_BetreayersAtelier_01.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 10,
+        HIGH_LEVEL = 10,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 36.180375,
+        RANK_DECREASE_NUM = 0.90216,
+        RANK_TOTAL_SCORE = 34291.3872463586,
+        TGFileName = "Dungeon_BetreayersAtelier_01.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 11,
+        HIGH_LEVEL = 11,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 74.1824596774194,
+        RANK_DECREASE_NUM = 1.19462662337662,
+        RANK_TOTAL_SCORE = 72653.0179250114,
+        TGFileName = "Dungeon_BetreayersAtelier_02.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 12,
+        HIGH_LEVEL = 12,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 132.775944010417,
+        RANK_DECREASE_NUM = 1.23478854478855,
+        RANK_TOTAL_SCORE = 122030.22923589,
+        TGFileName = "Dungeon_BetreayersAtelier_03.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 13,
+        HIGH_LEVEL = 13,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 128.752430555556,
+        RANK_DECREASE_NUM = 0.729647776465958,
+        RANK_TOTAL_SCORE = 122030.22923589,
+        TGFileName = "Dungeon_BetreayersAtelier_Hell.stg"
+      }
+    }
+  },
+  QuestSign71 = {
+    ID = GC_GM_QUEST69,
+    Name = str_quest_name2,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 13,
+    HIGH_LEVEL = 16,
+    TGFileName = "Dungeon_Dark_Library_01.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 13,
+        HIGH_LEVEL = 13,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 44.8816944444444,
+        RANK_DECREASE_NUM = 1.11912796536797,
+        RANK_TOTAL_SCORE = 42538.4083074647,
+        TGFileName = "Dungeon_Dark_Library_01.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 14,
+        HIGH_LEVEL = 14,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 101.090080882353,
+        RANK_DECREASE_NUM = 1.62317012987013,
+        RANK_TOTAL_SCORE = 98715.5369160218,
+        TGFileName = "Dungeon_Dark_Library_02.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 15,
+        HIGH_LEVEL = 15,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 162.381554761905,
+        RANK_DECREASE_NUM = 1.65168777888778,
+        RANK_TOTAL_SCORE = 163231.056146791,
+        TGFileName = "Dungeon_Dark_Library_03.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 16,
+        HIGH_LEVEL = 16,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 157.870956018519,
+        RANK_DECREASE_NUM = 0.975997323888233,
+        RANK_TOTAL_SCORE = 163231.056146791,
+        TGFileName = "Dungeon_Dark_Library_Hell.stg"
+      }
+    }
+  },
+  QuestSign72 = {
+    ID = GC_GM_QUEST70,
+    Name = str_quest_name2,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 16,
+    HIGH_LEVEL = 19,
+    TGFileName = "Dungeon_ArachnesNest_01.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 16,
+        HIGH_LEVEL = 16,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 77.598837962963,
+        RANK_DECREASE_NUM = 2.11083497835498,
+        RANK_TOTAL_SCORE = 80233.5058702777,
+        TGFileName = "Dungeon_ArachnesNest_01.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 17,
+        HIGH_LEVEL = 17,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 137.115173423423,
+        RANK_DECREASE_NUM = 2.39587316017316,
+        RANK_TOTAL_SCORE = 145708.635858216,
+        TGFileName = "Dungeon_ArachnesNest_02.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 18,
+        HIGH_LEVEL = 18,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 213.74536622807,
+        RANK_DECREASE_NUM = 2.36049736929737,
+        RANK_TOTAL_SCORE = 233280.456238279,
+        TGFileName = "Dungeon_ArachnesNest_03.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 19,
+        HIGH_LEVEL = 19,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 208.264715811966,
+        RANK_DECREASE_NUM = 1.39483935458481,
+        RANK_TOTAL_SCORE = 233280.456238279,
+        TGFileName = "Dungeon_ArachnesNest_Hell.stg"
+      }
+    }
+  },
+  QuestSign73 = {
+    ID = GC_GM_QUEST71,
+    Name = str_quest_name2,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 1,
+    HIGH_LEVEL = 4,
+    TGFileName = "Dungeon_GoliathsHabitat_03.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 1,
+        HIGH_LEVEL = 1,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 7.75386904761905,
+        RANK_DECREASE_NUM = 0.13534025974026,
+        RANK_TOTAL_SCORE = 5144.32612482931,
+        TGFileName = "Dungeon_GoliathsHabitat_01.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 2,
+        HIGH_LEVEL = 2,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 17.8824810606061,
+        RANK_DECREASE_NUM = 0.204371212121212,
+        RANK_TOTAL_SCORE = 12429.1431708011,
+        TGFileName = "Dungeon_GoliathsHabitat_02.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 3,
+        HIGH_LEVEL = 3,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 46.0748188405797,
+        RANK_DECREASE_NUM = 0.338771894771895,
+        RANK_TOTAL_SCORE = 33479.7501581702,
+        TGFileName = "Dungeon_GoliathsHabitat_03.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 4,
+        HIGH_LEVEL = 4,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 44.1550347222222,
+        RANK_DECREASE_NUM = 0.200183392365211,
+        RANK_TOTAL_SCORE = 33479.7501581702,
+        TGFileName = "Dungeon_GoliathsHabitat_Hell.stg"
+      }
+    }
+  },
+  QuestSign74 = {
+    ID = GC_GM_QUEST72,
+    Name = str_quest_name2,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 4,
+    HIGH_LEVEL = 7,
+    TGFileName = "Dungeon_AncientGolemsGrave_01.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 4,
+        HIGH_LEVEL = 4,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 16.5206597222222,
+        RANK_DECREASE_NUM = 0.329554978354978,
+        RANK_TOTAL_SCORE = 12526.489072599,
+        TGFileName = "Dungeon_AncientGolemsGrave_01.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 5,
+        HIGH_LEVEL = 5,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 19.4433333333333,
+        RANK_DECREASE_NUM = 0.252510822510823,
+        RANK_TOTAL_SCORE = 15356.8261037779,
+        TGFileName = "Dungeon_AncientGolemsGrave_02.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 6,
+        HIGH_LEVEL = 6,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 54.791266025641,
+        RANK_DECREASE_NUM = 0.455407925407926,
+        RANK_TOTAL_SCORE = 45006.5185394857,
+        TGFileName = "Dungeon_AncientGolemsGrave_03.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 7,
+        HIGH_LEVEL = 7,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 52.7619598765432,
+        RANK_DECREASE_NUM = 0.269104683195592,
+        RANK_TOTAL_SCORE = 45006.5185394857,
+        TGFileName = "Dungeon_AncientGolemsGrave_Hell.stg"
+      }
+    }
+  },
+  QuestSign75 = {
+    ID = GC_GM_QUEST73,
+    Name = str_quest_name2,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 7,
+    HIGH_LEVEL = 10,
+    TGFileName = "Dungeon_ShadowForest_01.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 7,
+        HIGH_LEVEL = 7,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 11.6712037037037,
+        RANK_DECREASE_NUM = 0.26192,
+        RANK_TOTAL_SCORE = 9955.6621304051,
+        TGFileName = "Dungeon_ShadowForest_01.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 8,
+        HIGH_LEVEL = 8,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 35.7810267857143,
+        RANK_DECREASE_NUM = 0.520451298701299,
+        RANK_TOTAL_SCORE = 31652.0298423987,
+        TGFileName = "Dungeon_ShadowForest_02.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 9,
+        HIGH_LEVEL = 9,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 60.9061637931034,
+        RANK_DECREASE_NUM = 0.564644555444555,
+        RANK_TOTAL_SCORE = 55802.0276657943,
+        TGFileName = "Dungeon_ShadowForest_03.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 10,
+        HIGH_LEVEL = 10,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 58.8759583333333,
+        RANK_DECREASE_NUM = 0.33365360094451,
+        RANK_TOTAL_SCORE = 55802.0276657943,
+        TGFileName = "Dungeon_ShadowForest_Hell.stg"
+      }
+    }
+  },
+  QuestSign76 = {
+    ID = GC_GM_QUEST74,
+    Name = str_quest_name2,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 10,
+    HIGH_LEVEL = 13,
+    TGFileName = "Dungeon_LacertasHuntingField_01.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 10,
+        HIGH_LEVEL = 10,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 17.1589027777778,
+        RANK_DECREASE_NUM = 0.427858354978355,
+        RANK_TOTAL_SCORE = 16263.0315433546,
+        TGFileName = "Dungeon_LacertasHuntingField_01.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 11,
+        HIGH_LEVEL = 11,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 44.2996317204301,
+        RANK_DECREASE_NUM = 0.648542424242424,
+        RANK_TOTAL_SCORE = 39442.0846242604,
+        TGFileName = "Dungeon_LacertasHuntingField_02.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 12,
+        HIGH_LEVEL = 12,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 96.9972122395833,
+        RANK_DECREASE_NUM = 0.902053812853813,
+        RANK_TOTAL_SCORE = 89147.1127022076,
+        TGFileName = "Dungeon_LacertasHuntingField_03.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 13,
+        HIGH_LEVEL = 13,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 94.0579027777778,
+        RANK_DECREASE_NUM = 0.533031798504526,
+        RANK_TOTAL_SCORE = 89147.1127022076,
+        TGFileName = "Dungeon_LacertasHuntingField_Hell.stg"
+      }
+    }
+  },
+  QuestSign77 = {
+    ID = GC_GM_QUEST75,
+    Name = str_quest_name2,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 13,
+    HIGH_LEVEL = 16,
+    TGFileName = "Dungeon_GroundofDespair_01.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 13,
+        HIGH_LEVEL = 13,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 54.0815,
+        RANK_DECREASE_NUM = 1.34852571428571,
+        RANK_TOTAL_SCORE = 51257.8893768776,
+        TGFileName = "Dungeon_GroundofDespair_01.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 14,
+        HIGH_LEVEL = 14,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 122.213073529412,
+        RANK_DECREASE_NUM = 1.96233506493506,
+        RANK_TOTAL_SCORE = 119342.363427856,
+        TGFileName = "Dungeon_GroundofDespair_02.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 15,
+        HIGH_LEVEL = 15,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 182.001560714286,
+        RANK_DECREASE_NUM = 1.85125554445554,
+        RANK_TOTAL_SCORE = 182953.704435935,
+        TGFileName = "Dungeon_GroundofDespair_03.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 16,
+        HIGH_LEVEL = 16,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 176.945961805556,
+        RANK_DECREASE_NUM = 1.09392373081464,
+        RANK_TOTAL_SCORE = 182953.704435935,
+        TGFileName = "Dungeon_GroundofDespair_Hell.stg"
+      }
+    }
+  },
+  QuestSign78 = {
+    ID = GC_GM_QUEST76,
+    Name = str_quest_name2,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 16,
+    HIGH_LEVEL = 19,
+    TGFileName = "Dungeon_DemensionFrontier_01.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 16,
+        HIGH_LEVEL = 16,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 50.9243981481481,
+        RANK_DECREASE_NUM = 1.38523982683983,
+        RANK_TOTAL_SCORE = 52653.4044196632,
+        TGFileName = "Dungeon_DemensionFrontier_01.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 17,
+        HIGH_LEVEL = 17,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 133.142662162162,
+        RANK_DECREASE_NUM = 2.32645974025974,
+        RANK_TOTAL_SCORE = 141487.154147929,
+        TGFileName = "Dungeon_DemensionFrontier_02.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 18,
+        HIGH_LEVEL = 18,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 283.993018640351,
+        RANK_DECREASE_NUM = 3.13627745587746,
+        RANK_TOTAL_SCORE = 309948.33771609,
+        TGFileName = "Dungeon_DemensionFrontier_03.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 19,
+        HIGH_LEVEL = 19,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 276.711146367521,
+        RANK_DECREASE_NUM = 1.85325486029122,
+        RANK_TOTAL_SCORE = 309948.33771609,
+        TGFileName = "Dungeon_DemensionFrontier_Hell.stg"
+      }
+    }
+  },
+  QuestSign79 = {
+    ID = GC_GM_QUEST77,
+    Name = str_quest_name2,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 41,
+    HIGH_LEVEL = 57,
+    TGFileName = "Dungeon_Infinity_Elia1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 43,
+        HIGH_LEVEL = 53,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 98,
+        RANK_DECREASE_NUM = 50,
+        RANK_TOTAL_SCORE = 1288618,
+        TGFileName = "Dungeon_Infinity_Elia1.stg"
+      }
+    }
+  },
+  QuestSign80 = {
+    ID = GC_GM_QUEST78,
+    Name = str_quest_name2,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 57,
+    HIGH_LEVEL = 73,
+    TGFileName = "Dungeon_Infinity_Xenia1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 59,
+        HIGH_LEVEL = 69,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 116,
+        RANK_DECREASE_NUM = 52,
+        RANK_TOTAL_SCORE = 1602455,
+        TGFileName = "Dungeon_Infinity_Xenia1.stg"
+      }
+    }
+  },
+  QuestSign81 = {
+    ID = GC_GM_QUEST79,
+    Name = str_quest_name2,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 73,
+    HIGH_LEVEL = 80,
+    TGFileName = "Dungeon_Infinity_Atum1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 73,
+        HIGH_LEVEL = 83,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 132,
+        RANK_DECREASE_NUM = 54,
+        RANK_TOTAL_SCORE = 1980671,
+        TGFileName = "Dungeon_Infinity_Atum1.stg"
+      }
+    }
+  },
+  QuestSign82 = {
+    ID = GC_GM_QUEST80,
+    Name = str_quest_name2,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 80,
+    HIGH_LEVEL = 85,
+    TGFileName = "Dungeon_Infinity_Archemedia1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 83,
+        HIGH_LEVEL = 85,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 145,
+        RANK_DECREASE_NUM = 56,
+        RANK_TOTAL_SCORE = 2189610,
+        TGFileName = "Dungeon_Infinity_Archemedia1.stg"
+      }
+    }
+  },
+  QuestSign83 = {
+    ID = GC_GM_QUEST81,
+    Name = str_quest_name1,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 85,
+    HIGH_LEVEL = 85,
+    TGFileName = "dungeon_TowerofExtinction.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name1,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 85,
+        HIGH_LEVEL = 85,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 285,
+        RANK_DECREASE_NUM = 100,
+        RANK_TOTAL_SCORE = 31896100,
+        TGFileName = "dungeon_TowerofExtinction.stg"
+      }
+    }
+  },
+  QuestSign84 = {
+    ID = GC_GM_QUEST82,
+    Name = str_quest_name1,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 85,
+    HIGH_LEVEL = 85,
+    TGFileName = "Dungeon_LandOfJudgment.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name1,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 0,
+        HIGH_LEVEL = 85,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 285,
+        RANK_DECREASE_NUM = 100,
+        RANK_TOTAL_SCORE = 31896100,
+        TGFileName = "Dungeon_LandOfJudgment.stg"
+      }
+    }
+  },
+  QuestSign85 = {
+    ID = GC_GM_QUEST83,
+    Name = str_quest_name1,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 0,
+    HIGH_LEVEL = 85,
+    TGFileName = "Dungeon_LandofGoldenslimeKing.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name1,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 0,
+        HIGH_LEVEL = 85,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 585,
+        RANK_DECREASE_NUM = 160,
+        RANK_TOTAL_SCORE = 24896100,
+        TGFileName = "Dungeon_LandofGoldenslimeKing.stg"
+      }
+    }
+  },
+  QuestSign86 = {
+    ID = GC_GM_QUEST95,
+    Name = str_quest_name1,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 0,
+    HIGH_LEVEL = 85,
+    TGFileName = "dungeon_giganticgorgos_01.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name1,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 0,
+        HIGH_LEVEL = 85,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 585,
+        RANK_DECREASE_NUM = 160,
+        RANK_TOTAL_SCORE = 24896100,
+        TGFileName = "dungeon_giganticgorgos_01.stg"
+      }
+    }
+  },
+  QuestSign87 = {
+    ID = GC_GM_QUEST93, -- Fortaleza Assombrada
+    Name = str_quest_name1,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 0,
+    HIGH_LEVEL = 85,
+    TGFileName = "Dungeon_Halloween_2022.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name1,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 0,
+        HIGH_LEVEL = 85,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 585,
+        RANK_DECREASE_NUM = 160,
+        RANK_TOTAL_SCORE = 24896100,
+        TGFileName = "Dungeon_Halloween_2022.stg"
+      }
+    }
+  },  
+  QuestSign88 = {
+    ID = GC_GM_QUEST92,	-- Alice_Event
+    Name = str_quest_name1,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 0,
+    HIGH_LEVEL = 85,
+    TGFileName = "dungeon_Alice_Event_01.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name1,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 0,
+        HIGH_LEVEL = 85,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 585,
+        RANK_DECREASE_NUM = 160,
+        RANK_TOTAL_SCORE = 24896100,
+        TGFileName = "dungeon_Alice_Event_01.stg"
+      }
+    }
+  },
+  QuestSign89 = {
+    ID = GC_GM_QUEST94, -- Easter Event
+    Name = str_quest_name1,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 0,
+    HIGH_LEVEL = 85,
+    TGFileName = "dungeon_Easter_Event_01.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name1,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 0,
+        HIGH_LEVEL = 85,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 585,
+        RANK_DECREASE_NUM = 160,
+        RANK_TOTAL_SCORE = 24896100,
+        TGFileName = "dungeon_Easter_Event_01.stg"
+      }
+    }
+  },
+  QuestSign90 = {
+    ID = GC_GM_QUEST84, -- Cripta Ancestral
+    Name = str_quest_name1,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 85,
+    HIGH_LEVEL = 86,
+    TGFileName = "dungeon_ancestralcript_01.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name1,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 85,
+        HIGH_LEVEL = 86,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 585,
+        RANK_DECREASE_NUM = 160,
+        RANK_TOTAL_SCORE = 24896100,
+        TGFileName = "dungeon_ancestralcript_01.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name1,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 85,
+        HIGH_LEVEL = 86,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 585,
+        RANK_DECREASE_NUM = 160,
+        RANK_TOTAL_SCORE = 24896100,
+        TGFileName = "dungeon_ancestralcript_01.stg"
+      }
+    }
+  },
+  QuestSign91 = {
+    ID = GC_GM_QUEST85, -- Santuário
+    Name = str_quest_name1,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 85,
+    HIGH_LEVEL = 85,
+    TGFileName = "dungeon_sanctuary_01.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name1,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 85,
+        HIGH_LEVEL = 85,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 585,
+        RANK_DECREASE_NUM = 160,
+        RANK_TOTAL_SCORE = 24896100,
+        TGFileName = "dungeon_sanctuary_01.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name1,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 85,
+        HIGH_LEVEL = 85,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 585,
+        RANK_DECREASE_NUM = 160,
+        RANK_TOTAL_SCORE = 24896100,
+        TGFileName = "dungeon_sanctuary_01.stg"
+      }	  
+    }
+  },
+  QuestSign92 = {
+    ID = GC_GM_QUEST97, -- Santuário
+    Name = str_quest_name1,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 0,
+    HIGH_LEVEL = 85,
+    TGFileName = "dungeon_origin_starshow.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name1,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 0,
+        HIGH_LEVEL = 85,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 585,
+        RANK_DECREASE_NUM = 160,
+        RANK_TOTAL_SCORE = 24896100,
+        TGFileName = "dungeon_origin_starshow.stg"
+      }
+    }
+  },
+  QuestSign93 = {
+    ID = GC_GM_QUEST98, -- Santuário
+    Name = str_quest_name1,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 85,
+    HIGH_LEVEL = 85,
+    TGFileName = "dungeon_hero_henir.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name1,
+        Desc = str_quest_desc1,
+		LOW_LEVEL = 85,
+		HIGH_LEVEL = 85,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 585,
+        RANK_DECREASE_NUM = 160,
+        RANK_TOTAL_SCORE = 24896100,
+        TGFileName = "dungeon_hero_henir.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name1,
+        Desc = str_quest_desc1,
+		LOW_LEVEL = 85,
+		HIGH_LEVEL = 85,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 585,
+        RANK_DECREASE_NUM = 160,
+        RANK_TOTAL_SCORE = 24896100,
+        TGFileName = "dungeon_hero_henir.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name1,
+        Desc = str_quest_desc1,
+		LOW_LEVEL = 85,
+		HIGH_LEVEL = 85,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 585,
+        RANK_DECREASE_NUM = 160,
+        RANK_TOTAL_SCORE = 24896100,
+        TGFileName = "dungeon_hero_henir.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name1,
+        Desc = str_quest_desc1,
+		LOW_LEVEL = 85,
+		HIGH_LEVEL = 85,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 585,
+        RANK_DECREASE_NUM = 160,
+        RANK_TOTAL_SCORE = 24896100,
+        TGFileName = "dungeon_hero_henir.stg"
+      },	  
+    }
+  },
+  QuestSign94 = {
+    ID = GC_GM_QUEST99, -- Altar da Invocação
+    Name = str_quest_name1,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 85,
+    HIGH_LEVEL = 90,
+    TGFileName = "dungeon_gcorigin_altar_of_invocation.stg",
+    IsCorrupted = TRUE,
+    CorruptionIndex = 20,
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name1,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 85,
+        HIGH_LEVEL = 90,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 585,
+        RANK_DECREASE_NUM = 160,
+        RANK_TOTAL_SCORE = 24896100,
+        TGFileName = "dungeon_gcorigin_altar_of_invocation.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name1,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 85,
+        HIGH_LEVEL = 90,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 585,
+        RANK_DECREASE_NUM = 160,
+        RANK_TOTAL_SCORE = 24896100,
+        TGFileName = "dungeon_gcorigin_altar_of_invocation.stg"
+      },
+    }
+  },
+  QuestSign95 = {
+    ID = GC_GM_QUEST100,	-- Portão Dimensional (Elyos)
+    Name = str_quest_name2,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 85,
+    HIGH_LEVEL = 90,
+    TGFileName = "Dungeon_Infinity_Elyos1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 85,
+        HIGH_LEVEL = 90,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 145,
+        RANK_DECREASE_NUM = 56,
+        RANK_TOTAL_SCORE = 2189610,
+        TGFileName = "Dungeon_Infinity_Elyos1.stg"
+      }
+    }
+  },
+  QuestSign96 = {
+    ID = GC_GM_QUEST101,	-- Coliseu
+    Name = str_quest_name2,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 80,
+    HIGH_LEVEL = 85,
+    TGFileName = "Dungeon_Coliseu_1.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 80,
+        HIGH_LEVEL = 85,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 145,
+        RANK_DECREASE_NUM = 56,
+        RANK_TOTAL_SCORE = 2189610,
+        TGFileName = "Dungeon_Coliseu_1.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 80,
+        HIGH_LEVEL = 85,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 145,
+        RANK_DECREASE_NUM = 56,
+        RANK_TOTAL_SCORE = 2189610,
+        TGFileName = "Dungeon_Coliseu_Hell.stg"
+      },
+    }
+  },
+  QuestSign97 = {
+    ID = GC_GM_QUEST102,	-- Berço da Origem
+    Name = str_quest_name2,
+    Desc = str_quest_desc1,
+    LOW_LEVEL = 85,
+    HIGH_LEVEL = 90,
+    TGFileName = "Dungeon_GCOrigin_Origin.stg",
+    IsCorrupted = TRUE,
+    CorruptionIndex = 40,
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 85,
+        HIGH_LEVEL = 90,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 285,
+        RANK_DECREASE_NUM = 100,
+        RANK_TOTAL_SCORE = 31896100,
+        TGFileName = "Dungeon_GCOrigin_Origin.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name2,
+        Desc = str_quest_desc1,
+        LOW_LEVEL = 85,
+        HIGH_LEVEL = 90,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 285,
+        RANK_DECREASE_NUM = 100,
+        RANK_TOTAL_SCORE = 31896100,
+        TGFileName = "Dungeon_GCOrigin_Origin_Hell.stg"
+      },	  
+    }
+  },
+  QuestSign98 = {
+    ID = GC_GM_QUEST103,
+    Name = str_quest_name16,
+    Desc = str_quest_name10,
+    LOW_LEVEL = 1,
+    HIGH_LEVEL = 85,
+    TGFileName = "dungeon_gcorigin_fantasmas_da_memoria.stg",
+    LevelInfo = {
+      {
+        Level = LEVEL_EASY,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 30,
+        HIGH_LEVEL = 59,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 46.2275702479339,
+        RANK_DECREASE_NUM = 4.07650531286896,
+        RANK_TOTAL_SCORE = 381794.970887574,
+        TGFileName = "dungeon_gcorigin_fantasmas_da_memoria.stg",
+        ExTGFileName = "dungeon_gcorigin_fantasmas_da_memoria.stg"
+      },
+      {
+        Level = LEVEL_NORMAL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 40,
+        HIGH_LEVEL = 59,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 89.0539628616186,
+        RANK_DECREASE_NUM = 8.86267955909637,
+        RANK_TOTAL_SCORE = 997743.7241013,
+        TGFileName = "dungeon_gcorigin_fantasmas_da_memoria.stg",
+        ExTGFileName = "dungeon_gcorigin_fantasmas_da_memoria.stg"
+      },
+      {
+        Level = LEVEL_HARD,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 60,
+        HIGH_LEVEL = 80,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 102.73621740458,
+        RANK_DECREASE_NUM = 16.7659465944128,
+        RANK_TOTAL_SCORE = 1417308.35938083,
+        TGFileName = "dungeon_gcorigin_fantasmas_da_memoria.stg",
+        ExTGFileName = "dungeon_gcorigin_fantasmas_da_memoria.stg"
+      },
+      {
+        Level = LEVEL_HELL,
+        Name = str_quest_name16,
+        Desc = str_quest_name10,
+        LOW_LEVEL = 60,
+        HIGH_LEVEL = 85,
+        RANK_DECREASE_NUM_OF_HITTED_BY_MONSTER = 102.73621740458,
+        RANK_DECREASE_NUM = 16.7659465944128,
+        RANK_TOTAL_SCORE = 1417308.35938083,
+        TGFileName = "dungeon_gcorigin_fantasmas_da_memoria.stg",
+        ExTGFileName = "dungeon_gcorigin_fantasmas_da_memoria.stg"
+      },	  
+    }
+  },  
+}

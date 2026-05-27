@@ -1,0 +1,6 @@
+DRIVER=SQL Server
+Network=DBMSSOCN
+DATABASE=stat
+WSID=GRANDCHASE
+APP=Microsoft® Windows® Operating System
+SERVER=WIN-JG1E0O7FSBS
